@@ -641,3 +641,66 @@ details p { margin: -6px 55px 28px 0; color: var(--muted); }
   .quick-brief { padding: 18px 14px; }
   .brief-chip { font-size: 12px; padding: 7px 11px; }
 }
+
+/* Guarantee Ribbon inside Pricing */
+.guarantee-ribbon {
+  margin: 0 0 22px;
+  padding: 14px 16px;
+  background: #fff8e6;
+  border: 1px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 3px 3px 0 var(--ink);
+}
+.guarantee-ribbon__badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #b35900;
+  margin-bottom: 6px;
+}
+.guarantee-ribbon p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+/* Guarantee Duo in Guarantee Section */
+.guarantee-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 28px;
+}
+.guarantee-pill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid var(--ink);
+  border-radius: 16px;
+  background: var(--paper-2);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+.guarantee-pill__icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+.guarantee-pill strong {
+  display: block;
+  font-size: 14px;
+  color: var(--ink);
+}
+.guarantee-pill small, .guarantee-pill span {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.35;
+  margin-top: 2px;
+}
+
+@media (max-width: 760px) {
+  .guarantee-duo { grid-template-columns: 1fr; }
+}

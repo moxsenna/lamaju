@@ -3,7 +3,7 @@
 ## Delivery
 
 - Project: Lamaju UMKM 48 Jam
-- Version: Deployment Cloudflare Pages `df342203` — peningkatan grafis vektor SVG tajam pada deliverables, problem cards, hero mock scene, dan showcase canvas
+- Version: Deployment Cloudflare Pages `aade4ec2` — penonjolan garansi ganda 48 jam (uang kembali 100% penuh + landing page tetap jadi milik Anda secara gratis)
 - Public URL: https://lp-lajupage-umkm-48jam.pages.dev/
 - Delivered at: 2026-08-21
 - SLA deadline: Selesai
