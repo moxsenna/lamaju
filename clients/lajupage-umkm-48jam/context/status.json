@@ -2,8 +2,8 @@
   "status": "DEPLOYED",
   "started_at": "",
   "sla_deadline_at": "",
-  "deployed_at": "2026-08-21T13:52:25.311Z",
-  "updated_at": "2026-08-21T13:52:25.311Z",
+  "deployed_at": "2026-08-21T14:15:18.218Z",
+  "updated_at": "2026-08-21T14:15:18.218Z",
   "history": [
     {
       "status": "INTAKE",
@@ -38,6 +38,11 @@
     {
       "status": "DEPLOYED",
       "at": "2026-08-21T13:52:25.311Z",
+      "note": "Deployed ke Pages project lp-lajupage-umkm-48jam, branch main."
+    },
+    {
+      "status": "DEPLOYED",
+      "at": "2026-08-21T14:15:18.218Z",
       "note": "Deployed ke Pages project lp-lajupage-umkm-48jam, branch main."
     }
   ]
