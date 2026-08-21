@@ -4,10 +4,24 @@
   const config = window.LP_RUNTIME_CONFIG || {};
   const digitsOnly = String(config.whatsappNumber || "").replace(/\D/g, "");
   const hasValidWhatsApp = /^[1-9][0-9]{7,14}$/.test(digitsOnly);
-  const message = String(config.whatsappMessage || "Halo, saya tertarik membuat landing page.").trim();
-  const whatsappUrl = hasValidWhatsApp
-    ? `https://wa.me/${digitsOnly}?text=${encodeURIComponent(message)}`
-    : "#";
+  const defaultMessage = String(config.whatsappMessage || "Halo Lamaju, saya tertarik membuat landing page.").trim();
+  const locationMessages = {
+    header: "Halo Lamaju, saya ingin konsultasi gratis pembuatan landing page UMKM 48 Jam.",
+    hero: "Halo Lamaju, saya ingin membuat landing page kilat 48 jam untuk usaha saya.",
+    outcome: "Halo Lamaju, saya mau cek apakah produk/usaha saya cocok untuk paket landing page 48 jam.",
+    pricing: "Halo Lamaju, saya ingin amankan slot Paket Landing Page UMKM Rp299.000 hari ini.",
+    final: "Halo Lamaju, saya sudah punya foto produk dan harga. Mau konsultasi pembuatan landing page 48 jam.",
+    sticky: "Halo Lamaju, saya tertarik dengan Paket UMKM 48 Jam Rp299.000.",
+    footer: "Halo Lamaju, saya ingin tanya informasi seputar landing page UMKM 48 Jam.",
+    "portfolio-final": "Halo Lamaju, saya sudah melihat galeri demo dan ingin diskusi landing page untuk usaha saya.",
+  };
+
+  function getWhatsAppUrl(location) {
+    if (!hasValidWhatsApp) return "#";
+    const text = locationMessages[location] || defaultMessage;
+    return `https://wa.me/${digitsOnly}?text=${encodeURIComponent(text)}`;
+  }
+
   const setupDialog = document.querySelector("[data-setup-dialog]");
 
   function trackWhatsAppClick(location) {
@@ -15,7 +29,7 @@
       cta_location: location,
       offer_name: config.offerName || "Paket Landing Page UMKM 48 Jam",
       page_slug: config.pageSlug || "lajupage-umkm-48jam",
-      link_url: whatsappUrl,
+      link_url: getWhatsAppUrl(location),
     };
 
     try {
@@ -39,7 +53,8 @@
   }
 
   document.querySelectorAll('[data-cta="whatsapp"]').forEach((link) => {
-    link.setAttribute("href", whatsappUrl);
+    const loc = link.dataset.ctaLocation || "unknown";
+    link.setAttribute("href", getWhatsAppUrl(loc));
     if (hasValidWhatsApp) {
       link.setAttribute("target", "_blank");
       link.setAttribute("rel", "noopener noreferrer");
@@ -51,7 +66,7 @@
         if (setupDialog && typeof setupDialog.showModal === "function") setupDialog.showModal();
         return;
       }
-      trackWhatsAppClick(link.dataset.ctaLocation || "unknown");
+      trackWhatsAppClick(loc);
     });
   });
 
