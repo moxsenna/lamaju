@@ -1,0 +1,60 @@
+name: Deploy Client
+
+on:
+  workflow_dispatch:
+    inputs:
+      client_slug:
+        description: Folder slug under clients/
+        required: true
+        type: string
+      branch:
+        description: Cloudflare deployment branch
+        required: true
+        default: main
+        type: string
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          package-manager-cache: false
+      - name: Validate, build, and QA
+        run: |
+          npm run validate -- --slug="${{ inputs.client_slug }}"
+          npm run build -- --slug="${{ inputs.client_slug }}"
+          npm run qa -- --slug="${{ inputs.client_slug }}"
+      - name: Read project config
+        id: config
+        shell: bash
+        run: |
+          PROJECT_NAME=$(node -e "const c=require('./clients/${{ inputs.client_slug }}/project.config.json'); process.stdout.write(c.cloudflare.project_name)")
+          test -n "$PROJECT_NAME"
+          echo "project_name=$PROJECT_NAME" >> "$GITHUB_OUTPUT"
+      - name: Deploy to Cloudflare Pages
+        id: deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: "4"
+          command: pages deploy dist/${{ inputs.client_slug }} --project-name=${{ steps.config.outputs.project_name }} --branch=${{ inputs.branch }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deployment summary
+        shell: bash
+        env:
+          DEPLOYMENT_URL: ${{ steps.deploy.outputs.deployment-url }}
+          ALIAS_URL: ${{ steps.deploy.outputs.pages-deployment-alias-url }}
+        run: |
+          echo "### Landing page deployed" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Client: ${{ inputs.client_slug }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Project: ${{ steps.config.outputs.project_name }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Deployment: $DEPLOYMENT_URL" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Alias: $ALIAS_URL" >> "$GITHUB_STEP_SUMMARY"

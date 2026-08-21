@@ -1,0 +1,75 @@
+{
+  "rental-mobil.html": {
+    "desktop": {
+      "h1": 1,
+      "overflow": false,
+      "title": "RodaKita Rent — Rental Mobil Siap Jalan"
+    },
+    "interaction": {
+      "family_visible": 1,
+      "faq_open": true
+    },
+    "mobile": {
+      "overflow": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "menu_open": true
+    },
+    "errors": []
+  },
+  "pet-grooming.html": {
+    "desktop": {
+      "h1": 1,
+      "overflow": false,
+      "title": "PawPaw Grooming — Bersih, Rapi, Tetap Happy"
+    },
+    "interaction": {
+      "dog_price": "Rp110rb",
+      "faq_open": true
+    },
+    "mobile": {
+      "overflow": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "menu_open": true
+    },
+    "errors": []
+  },
+  "wedding-organizer.html": {
+    "desktop": {
+      "h1": 1,
+      "overflow": false,
+      "title": "Asteria Wedding — Hari Besar, Terasa Lebih Tenang"
+    },
+    "interaction": {
+      "mood_title": "Modern editorial",
+      "faq_open": true
+    },
+    "mobile": {
+      "overflow": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "menu_open": true
+    },
+    "errors": []
+  },
+  "frozen-food.html": {
+    "desktop": {
+      "h1": 1,
+      "overflow": false,
+      "title": "Dapur Bekuin — Stok Enak, Tinggal Masak"
+    },
+    "interaction": {
+      "cart_count": "3",
+      "total": "Rp 92.000",
+      "meal_visible": 1
+    },
+    "mobile": {
+      "overflow": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "menu_open": true
+    },
+    "errors": []
+  }
+}

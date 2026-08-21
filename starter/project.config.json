@@ -1,0 +1,9 @@
+{
+  "client_slug": "",
+  "source_dir": "src",
+  "output_dir": "dist",
+  "cloudflare": {
+    "project_name": "",
+    "production_branch": "main"
+  }
+}

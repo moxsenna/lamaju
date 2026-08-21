@@ -1,0 +1,17 @@
+{
+  "name": "LajuPage — Landing Page Custom",
+  "short_name": "LajuPage",
+  "description": "Landing page custom siap jualan, selesai maksimal 48 jam.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f0e7",
+  "theme_color": "#f4f0e7",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

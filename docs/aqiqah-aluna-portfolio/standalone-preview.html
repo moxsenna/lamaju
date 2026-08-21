@@ -1,0 +1,1129 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#173f36">
+  <meta name="description" content="Contoh landing page jasa aqiqah modern: paket lengkap, proses transparan, dokumentasi, nasi box siap dibagikan, dan pemesanan langsung melalui WhatsApp.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://contoh-domain-anda.com/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <style>
+:root {
+  --green-950: #0d2924;
+  --green-900: #173f36;
+  --green-800: #215549;
+  --green-700: #2f6f5f;
+  --cream: #f7f0dd;
+  --cream-2: #fffaf0;
+  --paper: #fffdf7;
+  --peach: #eab48a;
+  --peach-dark: #c47d52;
+  --gold: #ddb95f;
+  --ink: #17302b;
+  --muted: #6b756f;
+  --line: rgba(23, 63, 54, .17);
+  --shadow: 0 24px 70px rgba(24, 54, 46, .14);
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --shell: min(1180px, calc(100vw - 40px));
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 96px; overflow-x: clip; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); font-size: 16px; line-height: 1.65; overflow-x: hidden; }
+body.menu-open { overflow: hidden; }
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; }
+button, input, textarea, select { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+::selection { background: var(--peach); color: var(--green-950); }
+
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.skip-link { position: fixed; z-index: 1000; top: 10px; left: 10px; padding: 10px 15px; background: white; color: var(--green-950); border-radius: 8px; transform: translateY(-140%); transition: transform .2s; }
+.skip-link:focus { transform: translateY(0); }
+.shell { width: var(--shell); margin-inline: auto; }
+.section-pad { padding: clamp(88px, 10vw, 148px) 0; }
+
+.portfolio-flag { position: fixed; right: 0; top: 46%; z-index: 40; transform: translateY(-50%); background: var(--peach); color: var(--green-950); padding: 12px 9px; border: 1px solid var(--green-950); border-right: 0; border-radius: 10px 0 0 10px; writing-mode: vertical-rl; text-orientation: mixed; box-shadow: 0 8px 20px rgba(13,41,36,.12); }
+.portfolio-flag span { font-size: 10px; font-weight: 900; letter-spacing: .15em; text-transform: uppercase; }
+.portfolio-flag small { display: none; }
+
+.topbar { background: var(--green-950); color: var(--cream); min-height: 38px; display: flex; align-items: center; font-size: 12px; }
+.topbar__inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.topbar p { margin: 0; display: flex; align-items: center; gap: 8px; }
+.topbar p svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.7; }
+.topbar a { text-decoration: none; font-weight: 800; letter-spacing: .03em; }
+
+.site-header { position: sticky; top: 0; z-index: 30; background: rgba(247,240,221,.92); backdrop-filter: blur(16px); border-bottom: 1px solid transparent; transition: border-color .25s, box-shadow .25s; }
+.site-header.is-scrolled { border-color: var(--line); box-shadow: 0 7px 28px rgba(18,55,47,.08); }
+.nav-wrap { min-height: 84px; display: flex; align-items: center; justify-content: space-between; gap: 34px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; color: var(--green-900); text-decoration: none; flex-shrink: 0; }
+.brand__mark { width: 48px; height: 48px; }
+.brand__text { display: flex; flex-direction: column; line-height: .95; }
+.brand__text strong { font: 400 12px/1 var(--sans); letter-spacing: .28em; text-transform: uppercase; margin-left: 2px; }
+.brand__text b { font: 700 23px/.95 var(--serif); letter-spacing: .08em; }
+.site-nav { display: flex; align-items: center; gap: clamp(18px, 2.4vw, 34px); }
+.site-nav > a:not(.button) { position: relative; text-decoration: none; font-size: 13px; font-weight: 750; }
+.site-nav > a:not(.button)::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -7px; height: 1px; background: currentColor; transition: right .25s; }
+.site-nav > a:not(.button):hover::after { right: 0; }
+.menu-toggle { display: none; width: 48px; height: 48px; border: 0; background: transparent; padding: 12px; }
+.menu-toggle i { display: block; width: 24px; height: 2px; background: var(--green-950); margin: 6px auto; transition: transform .25s; }
+
+.button { min-height: 52px; display: inline-flex; align-items: center; justify-content: center; gap: 13px; padding: 0 24px; border: 1px solid transparent; border-radius: 999px; text-decoration: none; font-weight: 850; font-size: 13px; letter-spacing: .01em; cursor: pointer; transition: transform .2s, box-shadow .2s, background .2s, color .2s; }
+.button:hover { transform: translateY(-2px); }
+.button:focus-visible, .text-link:focus-visible, .site-nav a:focus-visible, .accordion button:focus-visible, .gender-switch button:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+.button svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.button--small { min-height: 44px; padding-inline: 20px; }
+.button--large { min-height: 60px; padding-inline: 30px; font-size: 14px; }
+.button--primary { background: var(--green-900); color: var(--cream); box-shadow: 0 12px 25px rgba(23,63,54,.2); }
+.button--primary:hover { background: var(--green-950); box-shadow: 0 15px 31px rgba(23,63,54,.26); }
+.button--cream { background: var(--cream); color: var(--green-900); }
+.button--darktext { color: var(--green-950); }
+.button--outline { border-color: var(--green-900); color: var(--green-900); background: transparent; }
+.button--outline:hover { background: var(--green-900); color: var(--cream); }
+.text-link { display: inline-flex; align-items: center; gap: 12px; color: var(--green-900); text-decoration: none; font-weight: 850; font-size: 13px; border-bottom: 1px solid currentColor; padding-bottom: 5px; }
+.text-link--dark { color: var(--green-950); }
+
+.hero { position: relative; background: var(--cream); padding: clamp(72px, 8vw, 112px) 0 30px; overflow: hidden; }
+.hero__ornament { position: absolute; border-radius: 50%; pointer-events: none; }
+.hero__ornament--left { width: 360px; height: 360px; left: -230px; top: 180px; border: 1px solid rgba(196,125,82,.35); box-shadow: inset 0 0 0 60px rgba(234,180,138,.08); }
+.hero__ornament--right { width: 190px; height: 190px; right: -95px; top: 70px; border: 1px dashed rgba(23,63,54,.25); }
+.hero__grid { display: grid; grid-template-columns: minmax(0, .95fr) minmax(470px, 1.05fr); align-items: center; gap: clamp(44px, 7vw, 96px); }
+.eyebrow, .kicker { display: inline-flex; align-items: center; gap: 12px; color: var(--peach-dark); font-size: 11px; font-weight: 900; letter-spacing: .15em; text-transform: uppercase; }
+.eyebrow__line { width: 38px; height: 1px; background: currentColor; }
+.hero h1 { max-width: 680px; margin: 24px 0 25px; color: var(--green-950); font: 500 clamp(52px, 6.1vw, 86px)/.96 var(--serif); letter-spacing: -.055em; }
+.hero h1 em { color: var(--peach-dark); font-weight: 500; }
+.hero h1 span { position: relative; display: inline-block; font-style: italic; font-weight: 500; }
+.hero h1 span::after { content: ""; position: absolute; left: 2%; right: -4%; bottom: -8px; height: 11px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 18'%3E%3Cpath d='M4 12c70-12 164-12 292-3' fill='none' stroke='%23d89a68' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E") center/100% 100% no-repeat; }
+.hero__lead { max-width: 615px; margin: 0; color: #53645e; font-size: clamp(16px, 1.45vw, 19px); line-height: 1.75; }
+.hero__actions { display: flex; align-items: center; flex-wrap: wrap; gap: 24px; margin-top: 34px; }
+.trust-list { list-style: none; padding: 0; margin: 46px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.trust-list li { display: flex; align-items: flex-start; gap: 10px; min-width: 0; }
+.trust-list svg { width: 23px; height: 23px; padding: 4px; flex: 0 0 auto; border: 1px solid rgba(23,63,54,.2); border-radius: 50%; fill: none; stroke: var(--green-900); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.trust-list span { display: flex; flex-direction: column; }
+.trust-list b { font-size: 12px; line-height: 1.25; }
+.trust-list small { margin-top: 3px; color: var(--muted); font-size: 10px; }
+
+.hero__visual { position: relative; min-width: 0; }
+.hero-card { position: relative; min-height: 610px; background: var(--green-900); border-radius: 46% 46% 28px 28px; overflow: hidden; box-shadow: var(--shadow); isolation: isolate; }
+.hero-card::before { content: ""; position: absolute; inset: 28px; border: 1px solid rgba(247,240,221,.15); border-radius: 48% 48% 18px 18px; z-index: -1; }
+.hero-card__label { position: absolute; z-index: 4; top: 34px; left: 50%; transform: translateX(-50%); white-space: nowrap; color: var(--cream); font-size: 10px; font-weight: 850; letter-spacing: .17em; text-transform: uppercase; }
+.moon { position: absolute; width: 250px; height: 250px; border-radius: 50%; background: #f1c977; left: 50%; top: 98px; transform: translateX(-50%); box-shadow: 0 0 0 22px rgba(241,201,119,.08); z-index: -1; }
+.goat-illustration { position: absolute; width: 88%; left: 6%; bottom: 71px; color: var(--cream); }
+.meal-stack { position: absolute; right: 35px; bottom: 37px; width: 210px; height: 125px; z-index: 4; }
+.meal-box { position: absolute; width: 180px; height: 82px; border: 2px solid var(--green-950); border-radius: 12px; display: flex; align-items: center; background: var(--cream); color: var(--green-950); box-shadow: 7px 9px 0 rgba(13,41,36,.25); }
+.meal-box--back { right: 0; top: 0; justify-content: center; transform: rotate(7deg); background: var(--peach); font: 800 13px var(--serif); letter-spacing: .18em; }
+.meal-box--front { left: 0; bottom: 0; padding: 13px; gap: 10px; }
+.meal-box__stamp { width: 38px; height: 38px; border-radius: 50%; background: var(--green-900); color: var(--cream); display: grid; place-items: center; font: italic 700 20px var(--serif); }
+.meal-box--front div:last-child { display: flex; flex-direction: column; line-height: 1.25; }
+.meal-box--front strong { font-size: 11px; }
+.meal-box--front small { font-size: 9px; color: var(--muted); margin-top: 4px; }
+.floating-card { position: absolute; z-index: 7; display: flex; align-items: center; gap: 11px; padding: 13px 17px; background: var(--paper); border: 1px solid rgba(23,63,54,.16); border-radius: 14px; box-shadow: 0 15px 35px rgba(13,41,36,.18); }
+.floating-card--schedule { left: -40px; top: 180px; }
+.floating-card--status { right: -32px; top: 344px; }
+.floating-card__icon { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 50%; background: var(--peach); }
+.floating-card__icon svg { width: 18px; height: 18px; fill: none; stroke: var(--green-950); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.floating-card > div { display: flex; flex-direction: column; }
+.floating-card small { color: var(--muted); font-size: 9px; }
+.floating-card strong { font-size: 11px; }
+.status-dot { position: relative; width: 15px; height: 15px; border-radius: 50%; background: #4ba27f; box-shadow: 0 0 0 6px rgba(75,162,127,.14); }
+.status-dot::after { content: ""; position: absolute; inset: -5px; border: 1px solid rgba(75,162,127,.4); border-radius: inherit; animation: pulse 2.2s infinite; }
+@keyframes pulse { 0% { transform: scale(.8); opacity: .8; } 70%,100% { transform: scale(1.65); opacity: 0; } }
+.hero__bottom { margin-top: clamp(64px, 8vw, 95px); padding-top: 22px; border-top: 1px solid rgba(23,63,54,.18); display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+.hero__bottom p { margin: 0; font: italic 16px var(--serif); }
+.hero__services { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 12px; color: var(--green-900); font-size: 10px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+.hero__services i { width: 4px; height: 4px; border-radius: 50%; background: var(--peach-dark); }
+
+.section-heading--split { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(280px, .6fr); gap: clamp(40px, 8vw, 110px); align-items: end; margin-bottom: clamp(55px, 7vw, 84px); }
+.section-heading h2, .menu-copy h2, .process__intro h2, .faq__intro h2, .closing h2 { margin: 17px 0 0; font: 500 clamp(43px, 5.2vw, 68px)/1.02 var(--serif); letter-spacing: -.045em; }
+.section-heading h2 em, .menu-copy h2 em, .process__intro h2 em, .faq__intro h2 em, .closing h2 em { color: var(--peach-dark); font-weight: 500; }
+.section-heading--split > p { max-width: 420px; margin: 0 0 8px; color: var(--muted); }
+.section-heading--center { text-align: center; max-width: 780px; margin: 0 auto clamp(46px, 6vw, 70px); }
+.section-heading--center p { max-width: 620px; margin: 20px auto 0; color: var(--muted); }
+
+.why { background: var(--paper); }
+.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.feature-card { position: relative; min-height: 430px; display: flex; flex-direction: column; padding: 34px; border: 1px solid var(--green-950); overflow: hidden; }
+.feature-card--green { background: var(--green-900); color: var(--cream); }
+.feature-card--peach { background: var(--peach); color: var(--green-950); }
+.feature-card--cream { background: var(--cream); color: var(--green-950); }
+.feature-card__number { position: absolute; top: 28px; right: 28px; font-size: 10px; font-weight: 900; letter-spacing: .12em; }
+.feature-icon { width: 76px; height: 76px; margin: 20px 0 auto; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.feature-card h3 { max-width: 250px; margin: 45px 0 14px; font: 600 30px/1.05 var(--serif); letter-spacing: -.025em; }
+.feature-card p { margin: 0; opacity: .75; font-size: 14px; }
+.feature-card__note { margin-top: 30px; padding-top: 16px; border-top: 1px solid currentColor; opacity: .7; font-size: 10px; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
+
+.menu-showcase { background: var(--cream); }
+.menu-showcase__grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(380px, .95fr); align-items: center; gap: clamp(50px, 8vw, 110px); }
+.menu-visual { position: relative; min-height: 650px; background: var(--peach); border-radius: 290px 290px 28px 28px; overflow: hidden; }
+.pattern { position: absolute; width: 230px; height: 230px; border: 1px solid rgba(23,63,54,.25); border-radius: 50%; }
+.pattern::before, .pattern::after { content: ""; position: absolute; inset: 38px; border: inherit; border-radius: inherit; }
+.pattern::after { inset: 75px; }
+.pattern--one { left: -115px; top: 120px; }
+.pattern--two { right: -110px; bottom: 40px; }
+.plate-scene { position: absolute; inset: 0; display: grid; place-items: center; }
+.plate { position: relative; width: min(72%, 420px); aspect-ratio: 1; border-radius: 50%; background: #fffdf7; box-shadow: inset 0 0 0 18px #ebe0c9, 0 35px 50px rgba(90,52,31,.2); transform: rotate(-5deg); }
+.rice { position: absolute; width: 44%; height: 42%; border-radius: 50%; background: #f7f0dd; top: 17%; left: 18%; box-shadow: inset -7px -8px 0 rgba(221,185,95,.16); }
+.rice i { position: absolute; width: 13px; height: 5px; border: 1px solid #d9c8a9; border-radius: 50%; }
+.rice i:nth-child(1) { left: 25%; top: 25%; transform: rotate(20deg); }.rice i:nth-child(2) { left: 54%; top: 32%; transform: rotate(-15deg); }.rice i:nth-child(3) { left: 35%; top: 56%; transform: rotate(8deg); }.rice i:nth-child(4) { left: 65%; top: 60%; }.rice i:nth-child(5) { left: 19%; top: 70%; transform: rotate(-25deg); }
+.satay { position: absolute; width: 46%; height: 14px; background: #d8b477; border-radius: 20px; transform-origin: left center; }
+.satay::after { content: ""; position: absolute; right: -25px; top: 5px; width: 34px; height: 3px; background: #a8784b; }
+.satay b { position: absolute; top: -8px; width: 28px; height: 28px; background: #7b3f2d; border: 3px solid #593024; border-radius: 9px; transform: rotate(10deg); }
+.satay b:nth-child(1) { left: 12%; }.satay b:nth-child(2) { left: 36%; transform: rotate(-4deg); }.satay b:nth-child(3) { left: 60%; transform: rotate(8deg); }
+.satay--1 { left: 42%; top: 33%; transform: rotate(28deg); }.satay--2 { left: 38%; top: 42%; transform: rotate(17deg); }
+.gulai { position: absolute; width: 30%; height: 28%; border-radius: 50%; background: #d08b45; right: 16%; bottom: 19%; box-shadow: inset -8px -8px 0 rgba(107,53,28,.16); }
+.gulai span { position: absolute; inset: 25%; border-radius: 50% 45% 55% 40%; background: #875138; transform: rotate(25deg); }
+.pickle { position: absolute; width: 26%; height: 20%; left: 18%; bottom: 19%; }
+.pickle i { position: absolute; border-radius: 50%; }
+.pickle i:nth-child(1) { width: 55px; height: 16px; background: #83a668; transform: rotate(24deg); }.pickle i:nth-child(2) { width: 48px; height: 14px; background: #f1d6a4; left: 28px; top: 20px; transform: rotate(-18deg); }.pickle i:nth-child(3) { width: 35px; height: 12px; background: #d56857; left: 7px; top: 42px; transform: rotate(12deg); }
+.leaf-garnish { position: absolute; right: 19%; top: 15%; width: 27%; height: 25%; }
+.leaf-garnish i { position: absolute; width: 48px; height: 22px; background: #4e7856; border-radius: 100% 0 100% 0; }
+.leaf-garnish i:nth-child(1) { transform: rotate(-12deg); }.leaf-garnish i:nth-child(2) { left: 28px; top: 25px; transform: rotate(34deg); }.leaf-garnish i:nth-child(3) { left: -8px; top: 43px; transform: rotate(-50deg); }
+.plate-caption { position: absolute; left: 30px; right: 30px; bottom: 28px; display: flex; align-items: flex-end; justify-content: space-between; color: var(--green-950); }
+.plate-caption span { max-width: 100px; font-size: 10px; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
+.plate-caption strong { font: italic 18px var(--serif); }
+.menu-copy h2 { margin-bottom: 26px; }
+.menu-copy > p { color: var(--muted); max-width: 540px; }
+.menu-list { margin: 40px 0; border-top: 1px solid var(--line); }
+.menu-list > div { display: grid; grid-template-columns: 34px 155px 1fr; gap: 18px; align-items: baseline; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.menu-list span { color: var(--peach-dark); font-size: 10px; font-weight: 900; }
+.menu-list strong { font: 600 18px var(--serif); }
+.menu-list p { margin: 0; color: var(--muted); font-size: 13px; }
+
+.packages { background: var(--paper); }
+.gender-switch { width: min(520px, 100%); margin: 0 auto 40px; padding: 5px; display: grid; grid-template-columns: 1fr 1fr; background: var(--cream); border: 1px solid var(--line); border-radius: 999px; }
+.gender-switch button { min-height: 58px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 0; border-radius: 999px; background: transparent; color: var(--green-900); cursor: pointer; transition: background .25s, color .25s, box-shadow .25s; }
+.gender-switch button.is-active { background: var(--green-900); color: var(--cream); box-shadow: 0 8px 20px rgba(23,63,54,.2); }
+.gender-switch span { font-weight: 850; font-size: 13px; }
+.gender-switch small { opacity: .7; font-size: 9px; margin-top: 2px; }
+.package-grid { display: grid; grid-template-columns: repeat(3, 1fr); align-items: stretch; gap: 18px; }
+.package-card { position: relative; padding: 34px; display: flex; flex-direction: column; border: 1px solid var(--green-950); background: var(--cream-2); }
+.package-card--featured { background: var(--green-900); color: var(--cream); transform: translateY(-12px); box-shadow: var(--shadow); }
+.popular-badge { position: absolute; left: 22px; right: 22px; top: -16px; min-height: 32px; display: grid; place-items: center; background: var(--peach); color: var(--green-950); border: 1px solid var(--green-950); border-radius: 999px; font-size: 9px; font-weight: 950; letter-spacing: .14em; text-transform: uppercase; }
+.package-card__tag { font-size: 9px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; opacity: .65; }
+.package-card h3 { margin: 12px 0 9px; font: 600 39px/1 var(--serif); }
+.package-card__head p { min-height: 72px; margin: 0; opacity: .7; font-size: 13px; }
+.price { margin: 27px 0; padding: 23px 0; border-top: 1px solid currentColor; border-bottom: 1px solid currentColor; display: flex; flex-direction: column; border-color: color-mix(in srgb, currentColor 20%, transparent); }
+.price small { font-size: 9px; font-weight: 800; opacity: .6; text-transform: uppercase; letter-spacing: .12em; }
+.price strong { margin-top: 4px; font: 600 clamp(28px,3vw,36px)/1 var(--serif); letter-spacing: -.03em; }
+.package-card ul { list-style: none; padding: 0; margin: 0 0 32px; display: grid; gap: 14px; }
+.package-card li { display: flex; align-items: flex-start; gap: 10px; font-size: 12px; }
+.package-card li svg { width: 20px; height: 20px; flex: 0 0 auto; padding: 3px; border: 1px solid currentColor; border-radius: 50%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.package-card .button { width: 100%; margin-top: auto; }
+.package-card--featured .button--primary { background: var(--cream); color: var(--green-950); box-shadow: none; }
+.package-card--featured .button--primary:hover { background: white; }
+.package-note { margin-top: 46px; padding: 19px 22px; display: flex; align-items: flex-start; gap: 15px; border: 1px dashed rgba(23,63,54,.35); background: var(--cream); }
+.package-note svg { width: 26px; height: 26px; flex: 0 0 auto; fill: none; stroke: var(--peach-dark); stroke-width: 1.8; stroke-linecap: round; }
+.package-note p { margin: 0; color: var(--muted); font-size: 12px; }
+.package-note strong { color: var(--green-950); }
+
+.process { background: var(--green-950); color: var(--cream); }
+.process__grid { display: grid; grid-template-columns: minmax(320px, .85fr) minmax(0, 1.15fr); gap: clamp(60px, 9vw, 130px); align-items: start; }
+.process__intro { position: sticky; top: 130px; }
+.process__intro .kicker { color: var(--peach); }
+.process__intro h2 { margin-bottom: 26px; }
+.process__intro h2 em { color: var(--peach); }
+.process__intro p { max-width: 460px; color: rgba(247,240,221,.68); margin-bottom: 34px; }
+.process-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid rgba(247,240,221,.22); }
+.process-list li { min-height: 155px; display: grid; grid-template-columns: 46px 1fr 34px; gap: 22px; align-items: center; border-bottom: 1px solid rgba(247,240,221,.22); }
+.process-list__number { color: var(--peach); font-size: 10px; font-weight: 900; letter-spacing: .12em; }
+.process-list h3 { margin: 0 0 8px; font: 500 29px/1.1 var(--serif); }
+.process-list p { margin: 0; color: rgba(247,240,221,.63); font-size: 13px; }
+.process-list svg { width: 28px; height: 28px; fill: none; stroke: var(--peach); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+
+.objections { background: #e9c4a2; }
+.objection-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.objection-card { min-height: 315px; padding: 30px; display: flex; flex-direction: column; border: 1px solid var(--green-950); background: rgba(255,250,240,.45); }
+.objection-card__icon { width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid var(--green-950); border-radius: 50%; font-size: 10px; font-weight: 900; }
+.objection-card blockquote { margin: auto 0 25px; font: italic 27px/1.15 var(--serif); letter-spacing: -.02em; }
+.objection-card p { margin: 0; padding-top: 20px; border-top: 1px solid rgba(23,63,54,.25); font-size: 13px; color: rgba(23,48,43,.75); }
+
+.faq { background: var(--paper); }
+.faq__grid { display: grid; grid-template-columns: minmax(320px, .78fr) minmax(0, 1.22fr); gap: clamp(55px, 9vw, 130px); align-items: start; }
+.faq__intro { position: sticky; top: 130px; }
+.faq__intro > p { max-width: 430px; color: var(--muted); margin: 24px 0 36px; }
+.faq-contact { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; font-size: 12px; }
+.faq-contact span { color: var(--muted); }
+.faq-contact a { font-weight: 900; text-decoration: none; border-bottom: 1px solid currentColor; }
+.accordion { border-top: 1px solid var(--green-950); }
+.accordion-item { border-bottom: 1px solid var(--green-950); }
+.accordion h3 { margin: 0; }
+.accordion button { width: 100%; min-height: 96px; padding: 22px 0; display: flex; align-items: center; justify-content: space-between; gap: 25px; border: 0; background: transparent; color: var(--green-950); text-align: left; font: 500 21px/1.3 var(--serif); cursor: pointer; }
+.accordion button i { position: relative; width: 24px; height: 24px; flex: 0 0 auto; border: 1px solid var(--green-950); border-radius: 50%; }
+.accordion button i::before, .accordion button i::after { content: ""; position: absolute; left: 50%; top: 50%; width: 9px; height: 1px; background: currentColor; transform: translate(-50%,-50%); transition: transform .25s; }
+.accordion button i::after { transform: translate(-50%,-50%) rotate(90deg); }
+.accordion button[aria-expanded="true"] i::after { transform: translate(-50%,-50%) rotate(0); }
+.accordion-panel { padding: 0 50px 27px 0; }
+.accordion-panel p { margin: 0; color: var(--muted); }
+
+.closing { background: var(--peach); padding: 0 0 clamp(80px,8vw,110px); }
+.closing__inner { min-height: 545px; display: grid; grid-template-columns: 1.05fr .95fr; background: var(--green-900); color: var(--cream); overflow: hidden; }
+.closing__copy { padding: clamp(50px, 7vw, 90px); display: flex; flex-direction: column; justify-content: center; }
+.kicker--light { color: var(--peach); }
+.closing h2 { margin-bottom: 24px; }
+.closing h2 em { color: var(--peach); }
+.closing__copy > p { max-width: 540px; color: rgba(247,240,221,.7); }
+.closing__actions { margin-top: 32px; display: flex; align-items: center; flex-wrap: wrap; gap: 18px; }
+.closing__actions > span { max-width: 120px; color: rgba(247,240,221,.6); font-size: 10px; line-height: 1.4; }
+.closing__visual { position: relative; min-height: 470px; overflow: hidden; }
+.closing-moon { position: absolute; width: 360px; height: 360px; border-radius: 50%; background: var(--gold); left: 50%; top: 50%; transform: translate(-45%,-48%); }
+.gift-box { position: absolute; width: 220px; height: 110px; background: var(--cream); color: var(--green-950); border: 2px solid var(--green-950); box-shadow: 12px 14px 0 rgba(13,41,36,.22); display: grid; place-items: center; }
+.gift-box::before { content: ""; position: absolute; left: -2px; right: -2px; top: 22px; height: 2px; background: var(--green-950); }
+.gift-box::after { content: ""; position: absolute; top: -12px; left: 50%; width: 42px; height: 22px; border: 2px solid var(--green-950); border-bottom: 0; border-radius: 30px 30px 0 0; transform: translateX(-50%); }
+.gift-box span { margin-top: 17px; font: 600 18px var(--serif); }
+.gift-box--one { left: 16%; top: 42%; transform: rotate(-7deg); }
+.gift-box--two { right: 9%; top: 30%; transform: rotate(8deg); background: var(--peach); }
+.closing-leaf { position: absolute; width: 150px; height: 60px; border-radius: 100% 0 100% 0; background: var(--cream); opacity: .9; }
+.closing-leaf--one { left: 8%; bottom: 6%; transform: rotate(25deg); }.closing-leaf--two { right: 3%; top: 8%; transform: rotate(-40deg); }
+.closing-star { position: absolute; color: var(--cream); font-size: 31px; }
+.closing-star--one { left: 15%; top: 17%; }.closing-star--two { right: 13%; bottom: 18%; font-size: 20px; }
+
+.site-footer { background: var(--green-950); color: var(--cream); }
+.footer__top { min-height: 190px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: clamp(30px,6vw,90px); }
+.brand--footer { color: var(--cream); }
+.brand--footer .brand__mark { color: var(--cream); }
+.footer__top > p { max-width: 460px; margin: 0; color: rgba(247,240,221,.58); font-size: 12px; }
+.footer-wa { display: inline-flex; align-items: center; gap: 12px; color: var(--cream); text-decoration: none; font-size: 12px; font-weight: 850; border-bottom: 1px solid rgba(247,240,221,.5); padding-bottom: 5px; }
+.footer-wa svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; }
+.footer__bottom { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 30px; border-top: 1px solid rgba(247,240,221,.15); color: rgba(247,240,221,.45); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
+
+.mobile-cta { display: none; position: fixed; z-index: 29; left: 12px; right: 12px; bottom: max(12px, env(safe-area-inset-bottom)); min-height: 64px; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 9px 9px 18px; background: var(--green-950); color: var(--cream); border: 1px solid rgba(255,255,255,.18); border-radius: 17px; box-shadow: 0 17px 40px rgba(13,41,36,.3); transform: translateY(130%); transition: transform .3s; }
+.mobile-cta.is-visible { transform: translateY(0); }
+.mobile-cta > div { display: flex; flex-direction: column; line-height: 1.3; }
+.mobile-cta small { color: rgba(247,240,221,.65); font-size: 9px; }
+.mobile-cta strong { font-size: 12px; }
+.mobile-cta a { min-height: 44px; display: grid; place-items: center; padding: 0 16px; border-radius: 12px; background: var(--peach); color: var(--green-950); text-decoration: none; font-size: 11px; font-weight: 900; }
+
+.setup-dialog { width: min(440px, calc(100vw - 32px)); padding: 38px; border: 1px solid var(--green-950); border-radius: 20px; color: var(--green-950); background: var(--paper); box-shadow: var(--shadow); text-align: center; }
+.setup-dialog::backdrop { background: rgba(13,41,36,.72); backdrop-filter: blur(4px); }
+.setup-dialog__close { position: absolute; top: 13px; right: 15px; width: 38px; height: 38px; border: 0; background: transparent; font-size: 26px; cursor: pointer; }
+.setup-dialog__icon { width: 55px; height: 55px; display: grid; place-items: center; margin: 0 auto 18px; border-radius: 50%; background: var(--peach); font: 700 25px var(--serif); }
+.setup-dialog h2 { margin: 0 0 12px; font: 600 30px var(--serif); }
+.setup-dialog p { margin: 0 0 25px; color: var(--muted); font-size: 13px; }
+.setup-dialog code { background: var(--cream); padding: 2px 5px; border-radius: 4px; }
+
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity .65s ease, transform .65s ease; }
+.reveal[data-delay="1"] { transition-delay: .08s; }.reveal[data-delay="2"] { transition-delay: .16s; }.reveal[data-delay="3"] { transition-delay: .24s; }.reveal[data-delay="4"] { transition-delay: .32s; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 1050px) {
+  .hero__grid { grid-template-columns: 1fr 1fr; gap: 45px; }
+  .hero-card { min-height: 550px; }
+  .floating-card--schedule { left: -20px; }.floating-card--status { right: -15px; }
+  .trust-list { grid-template-columns: 1fr; gap: 10px; }
+  .trust-list li { align-items: center; }
+  .feature-card { padding: 27px; }
+  .menu-showcase__grid { gap: 55px; }
+  .package-card { padding: 27px; }
+  .footer__top { grid-template-columns: auto 1fr; }
+  .footer-wa { grid-column: 2; }
+}
+
+@media (max-width: 860px) {
+  :root { --shell: min(100% - 32px, 760px); }
+  .portfolio-flag { display: none; }
+  .topbar__inner { justify-content: center; }
+  .topbar a { display: none; }
+  .menu-toggle { display: block; position: relative; z-index: 4; }
+  .menu-toggle[aria-expanded="true"] i:first-of-type { transform: translateY(4px) rotate(45deg); }
+  .menu-toggle[aria-expanded="true"] i:last-of-type { transform: translateY(-4px) rotate(-45deg); }
+  .site-nav { position: fixed; inset: 0; width: 100%; max-width: 100%; padding: 110px 28px 40px; display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 0; background: var(--cream); overflow-y: auto; transform: translateX(100%); visibility: hidden; pointer-events: none; transition: transform .3s, visibility 0s linear .3s; }
+  .site-nav.is-open { transform: translateX(0); visibility: visible; pointer-events: auto; transition-delay: 0s; }
+  .site-nav > a:not(.button) { padding: 18px 0; border-bottom: 1px solid var(--line); font: 500 30px var(--serif); }
+  .site-nav .button { margin-top: 26px; }
+  .hero { padding-top: 64px; }
+  .hero__grid { grid-template-columns: 1fr; }
+  .hero__copy { text-align: center; }
+  .eyebrow { justify-content: center; }
+  .hero h1, .hero__lead { margin-inline: auto; }
+  .hero__actions { justify-content: center; }
+  .trust-list { grid-template-columns: repeat(3, 1fr); text-align: left; }
+  .hero__visual { max-width: 620px; width: 100%; margin: 10px auto 0; }
+  .hero-card { min-height: 650px; }
+  .hero__bottom { flex-direction: column; text-align: center; }
+  .hero__services { justify-content: center; }
+  .section-heading--split, .menu-showcase__grid, .process__grid, .faq__grid, .closing__inner { grid-template-columns: 1fr; }
+  .section-heading--split { gap: 22px; }
+  .section-heading--split > p { max-width: 620px; }
+  .feature-grid, .package-grid, .objection-grid { grid-template-columns: 1fr; }
+  .feature-card { min-height: 360px; }
+  .feature-card h3 { max-width: none; }
+  .menu-visual { width: min(630px,100%); margin-inline: auto; }
+  .menu-copy { max-width: 680px; }
+  .package-grid { max-width: 620px; margin: 0 auto; }
+  .package-card--featured { transform: none; order: -1; }
+  .package-card__head p { min-height: auto; }
+  .process__intro, .faq__intro { position: static; }
+  .process__intro { padding-bottom: 20px; }
+  .objection-grid { max-width: 680px; }
+  .objection-card { min-height: 270px; }
+  .faq__grid { gap: 55px; }
+  .closing__visual { order: -1; min-height: 430px; }
+  .closing__copy { text-align: center; }
+  .closing__copy > p { margin-inline: auto; }
+  .closing__actions { justify-content: center; }
+  .footer__top { grid-template-columns: 1fr; padding: 45px 0; gap: 25px; }
+  .footer-wa { grid-column: auto; justify-self: start; }
+}
+
+@media (max-width: 620px) {
+  :root { --shell: calc(100vw - 28px); }
+  .section-pad { padding: 82px 0; }
+  .topbar { min-height: 34px; }
+  .topbar p { font-size: 9px; text-align: center; }
+  .nav-wrap { min-height: 72px; }
+  .brand__mark { width: 42px; height: 42px; }
+  .brand__text strong { font-size: 9px; }.brand__text b { font-size: 20px; }
+  .hero { padding-top: 52px; }
+  .hero h1 { font-size: clamp(43px, 13vw, 61px); }
+  .hero__lead { font-size: 15px; }
+  .hero__actions { flex-direction: column; gap: 18px; }
+  .hero__actions .button { width: 100%; }
+  .trust-list { grid-template-columns: 1fr; width: max-content; max-width: 100%; margin-inline: auto; }
+  .hero-card { min-height: 500px; border-radius: 42% 42% 22px 22px; }
+  .hero-card::before { inset: 17px; }
+  .hero-card__label { top: 26px; font-size: 8px; }
+  .moon { width: 190px; height: 190px; top: 78px; }
+  .goat-illustration { width: 98%; left: 1%; bottom: 63px; }
+  .meal-stack { right: 15px; bottom: 20px; transform: scale(.75); transform-origin: right bottom; }
+  .floating-card { padding: 10px 12px; }
+  .floating-card--schedule { left: 9px; top: 134px; }
+  .floating-card--status { right: 8px; top: 305px; }
+  .floating-card__icon { width: 30px; height: 30px; }
+  .floating-card strong { font-size: 9px; }.floating-card small { font-size: 8px; }
+  .hero__bottom { margin-top: 60px; }
+  .hero__services { gap: 8px; font-size: 8px; }
+  .section-heading h2, .menu-copy h2, .process__intro h2, .faq__intro h2, .closing h2 { font-size: clamp(39px,11vw,52px); }
+  .feature-card { min-height: 345px; padding: 25px; }
+  .feature-icon { width: 63px; height: 63px; }
+  .feature-card h3 { font-size: 27px; }
+  .menu-visual { min-height: 500px; border-radius: 220px 220px 22px 22px; }
+  .plate { width: 84%; }
+  .plate-caption { left: 18px; right: 18px; bottom: 20px; align-items: flex-start; flex-direction: column; gap: 4px; }
+  .plate-caption strong { font-size: 14px; }
+  .menu-list > div { grid-template-columns: 28px 1fr; gap: 7px 12px; }
+  .menu-list p { grid-column: 2; }
+  .gender-switch button { min-height: 55px; }
+  .package-card { padding: 27px 23px; }
+  .price strong { font-size: 31px; }
+  .process-list li { min-height: 170px; grid-template-columns: 34px 1fr; gap: 14px; padding: 20px 0; }
+  .process-list li > svg { display: none; }
+  .process-list h3 { font-size: 26px; }
+  .objection-card blockquote { font-size: 25px; }
+  .accordion button { min-height: 86px; font-size: 19px; }
+  .accordion-panel { padding-right: 0; }
+  .closing { padding-bottom: 0; }
+  .closing__inner { width: 100%; }
+  .closing__visual { min-height: 350px; }
+  .closing-moon { width: 280px; height: 280px; }
+  .gift-box { transform: scale(.78) rotate(-7deg); transform-origin: center; }
+  .gift-box--one { left: -2%; }.gift-box--two { right: -8%; transform: scale(.78) rotate(8deg); }
+  .closing__copy { padding: 55px 25px 70px; }
+  .closing__actions { flex-direction: column; }
+  .closing__actions .button { width: 100%; }
+  .footer__bottom { padding: 24px 0 96px; flex-direction: column; align-items: flex-start; justify-content: center; gap: 7px; }
+  .mobile-cta { display: flex; }
+}
+
+@media (max-width: 360px) {
+  :root { --shell: calc(100vw - 22px); }
+  .hero h1 { font-size: 42px; }
+  .hero-card { min-height: 460px; }
+  .floating-card--status { top: 280px; }
+  .hero__services i { display: none; }
+  .hero__services { flex-direction: column; }
+  .gender-switch span { font-size: 11px; }
+  .package-card { padding-inline: 20px; }
+  .mobile-cta { left: 8px; right: 8px; padding-left: 13px; }
+  .mobile-cta a { padding-inline: 12px; font-size: 10px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .reveal { opacity: 1; transform: none; }
+}
+
+  </style>
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:title" content="Aqiqah Aluna — Ibadah Tenang, Hidangan Dikenang">
+  <meta property="og:description" content="Contoh landing page portfolio layanan aqiqah lengkap dengan paket, proses, menu, FAQ, dan CTA WhatsApp.">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:url" content="https://contoh-domain-anda.com/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>Aqiqah Aluna — Ibadah Tenang, Hidangan Dikenang</title>
+  <script>
+window.AQIQAH_CONFIG = {
+  // Gunakan format internasional tanpa tanda +, spasi, atau tanda hubung.
+  whatsappNumber: "",
+  whatsappDisplay: "+62 812-3456-7890",
+  whatsappMessage: "Halo Aqiqah Aluna, saya ingin konsultasi paket aqiqah. Bisa dibantu?",
+  ga4Id: "",
+  metaPixelId: ""
+};
+
+  </script>
+  <script>
+    (function () {
+      const config = window.AQIQAH_CONFIG || {};
+      const ga4Id = String(config.ga4Id || '').trim();
+      if (/^G-[A-Z0-9]+$/i.test(ga4Id)) {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(ga4Id)}`;
+        document.head.appendChild(script);
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { window.dataLayer.push(arguments); };
+        window.gtag('js', new Date());
+        window.gtag('config', ga4Id);
+      }
+
+      const pixelId = String(config.metaPixelId || '').trim();
+      if (/^\d{5,20}$/.test(pixelId)) {
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+        (window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        window.fbq('init', pixelId);
+        window.fbq('track', 'PageView');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
+  <div class="portfolio-flag" aria-label="Keterangan portfolio">
+    <span>Portfolio demo</span>
+    <small>Brand & harga fiktif</small>
+  </div>
+
+  <div class="topbar">
+    <div class="shell topbar__inner">
+      <p>
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.5a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15Zm3.5 5.7-4.2 4.2-2.1-2.1"/></svg>
+        Contoh layanan area Jabodetabek — konsultasi paket tanpa biaya
+      </p>
+      <a href="#paket">Lihat paket contoh <span aria-hidden="true">↓</span></a>
+    </div>
+  </div>
+
+  <header class="site-header" data-header>
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="Aqiqah Aluna, kembali ke atas">
+        <svg class="brand__mark" viewBox="0 0 52 52" role="img" aria-label="Logo Aqiqah Aluna">
+          <circle cx="26" cy="26" r="25" fill="currentColor"/>
+          <path d="M16.4 29.7c2.3-8.5 7.3-13.3 15.1-14.5-.3 4.8-2 8.5-5.3 11.1 3.4-.1 6.5.8 9.4 2.7-4 5.4-9.5 7.8-16.4 7.2 1-2.1 2.6-4.3 4.7-6.5-2.7.5-5.2.5-7.5 0Z" fill="#f7f0dd"/>
+          <path d="M25.7 35.4c.2-5 1.9-9.8 5.1-14.4" fill="none" stroke="#f7f0dd" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="brand__text"><strong>Aqiqah</strong><b>ALUNA</b></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+        <span class="sr-only">Buka menu</span>
+        <i></i><i></i>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navigasi utama" data-menu>
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#paket">Paket</a>
+        <a href="#proses">Proses</a>
+        <a href="#faq">FAQ</a>
+        <a class="button button--small button--cream" href="#kontak" data-cta="whatsapp" data-cta-location="header">
+          Tanya paket
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M8 5h7v7"/></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="hero__ornament hero__ornament--left" aria-hidden="true"></div>
+      <div class="hero__ornament hero__ornament--right" aria-hidden="true"></div>
+      <div class="shell hero__grid">
+        <div class="hero__copy reveal">
+          <div class="eyebrow">
+            <span class="eyebrow__line"></span>
+            Layanan aqiqah lengkap untuk hari yang penuh syukur
+          </div>
+          <h1>Ibadah lebih <em>tenang,</em><br>hidangan lebih <span>berkesan.</span></h1>
+          <p class="hero__lead">Dari pemilihan hewan, penyembelihan, pengolahan, hingga nasi box siap dibagikan—kami bantu keluarga menyiapkan aqiqah tanpa kerepotan yang tidak perlu.</p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="#kontak" data-cta="whatsapp" data-cta-location="hero">
+              Konsultasi via WhatsApp
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M8 5h7v7"/></svg>
+            </a>
+            <a class="text-link" href="#paket">Lihat pilihan paket <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <ul class="trust-list" aria-label="Keunggulan utama">
+            <li>
+              <svg viewBox="0 0 22 22" aria-hidden="true"><path d="m6 11 3.1 3.2L16.5 7"/></svg>
+              <span><b>Proses transparan</b><small>Dokumentasi tersedia</small></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 22 22" aria-hidden="true"><path d="m6 11 3.1 3.2L16.5 7"/></svg>
+              <span><b>Menu siap dibagikan</b><small>Praktis & rapi</small></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 22 22" aria-hidden="true"><path d="m6 11 3.1 3.2L16.5 7"/></svg>
+              <span><b>Jadwal fleksibel</b><small>Disesuaikan keluarga</small></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal" data-delay="1" aria-label="Ilustrasi layanan Aqiqah Aluna">
+          <div class="hero-card">
+            <span class="hero-card__label">Diproses dengan perhatian</span>
+            <div class="moon" aria-hidden="true"></div>
+            <svg class="goat-illustration" viewBox="0 0 520 430" role="img" aria-label="Ilustrasi kambing dan tumbuhan dekoratif">
+              <g class="leaves" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round">
+                <path d="M76 372c17-65 16-124-2-178M75 300c-23-18-42-25-59-22M77 260c23-23 45-34 66-33M74 331c-22-11-39-13-54-7"/>
+                <path d="M444 376c-4-59 4-112 25-159M451 315c26-20 47-27 64-22M459 273c-20-19-38-28-55-26"/>
+              </g>
+              <g class="goat" transform="translate(102 91)">
+                <path d="M118 222c-38 5-70-10-85-42-14-30-7-65 17-85 24-20 61-23 90-8 25-25 57-39 93-39 64 0 113 42 113 99 0 35-19 65-49 82l10 83h-35l-14-66c-18 5-39 7-61 7-20 0-39-2-56-6l-11 65H95l8-77c-8-3-16-8-23-13Z" fill="#f4e6cb" stroke="#173f36" stroke-width="7" stroke-linejoin="round"/>
+                <path d="M51 98C27 85 16 60 19 29c34 4 56 20 66 48M277 64c15-30 39-47 71-52 4 32-8 56-36 72" fill="#d89a68" stroke="#173f36" stroke-width="7" stroke-linejoin="round"/>
+                <path d="M99 84c-8-27-3-51 14-73 25 21 35 47 30 77M263 61c-2-27 8-49 30-67 21 26 25 52 13 79" fill="none" stroke="#173f36" stroke-width="7" stroke-linecap="round"/>
+                <path d="M96 111c8 11 20 17 35 17M248 96c10 9 21 13 34 11" fill="none" stroke="#173f36" stroke-width="6" stroke-linecap="round"/>
+                <circle cx="121" cy="98" r="5" fill="#173f36"/><circle cx="270" cy="85" r="5" fill="#173f36"/>
+                <path d="M191 126c14 12 34 12 48 0" fill="none" stroke="#173f36" stroke-width="6" stroke-linecap="round"/>
+                <path d="M203 112h23" stroke="#173f36" stroke-width="6" stroke-linecap="round"/>
+                <path d="M145 93c31-19 67-26 108-19" fill="none" stroke="#c47d52" stroke-width="9" stroke-linecap="round" opacity=".55"/>
+              </g>
+            </svg>
+
+            <div class="meal-stack" aria-hidden="true">
+              <div class="meal-box meal-box--back"><span>ALUNA</span></div>
+              <div class="meal-box meal-box--front">
+                <div class="meal-box__stamp">A</div>
+                <div><strong>Nasi Box Aqiqah</strong><small>Siap dibagikan</small></div>
+              </div>
+            </div>
+
+            <div class="floating-card floating-card--schedule">
+              <span class="floating-card__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v3m12-3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1Z"/></svg>
+              </span>
+              <div><small>Jadwal contoh</small><strong>Sabtu, 09.00 WIB</strong></div>
+            </div>
+            <div class="floating-card floating-card--status">
+              <span class="status-dot"></span>
+              <div><small>Status pesanan</small><strong>Siap didistribusikan</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shell hero__bottom reveal">
+        <p>Semua yang dibutuhkan keluarga, dirangkum dalam satu layanan.</p>
+        <div class="hero__services" aria-label="Rangkaian layanan">
+          <span>Pemilihan hewan</span><i></i><span>Penyembelihan</span><i></i><span>Masak & kemas</span><i></i><span>Pengantaran</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="why section-pad" id="keunggulan" aria-labelledby="why-title">
+      <div class="shell">
+        <div class="section-heading section-heading--split reveal">
+          <div>
+            <span class="kicker">Dirancang untuk menenangkan</span>
+            <h2 id="why-title">Bukan sekadar masak.<br><em>Kami menjaga setiap tahapnya.</em></h2>
+          </div>
+          <p>Aqiqah adalah momen penting. Karena itu, keluarga perlu tahu apa yang dikerjakan, kapan selesai, dan bagaimana hidangan akan diterima.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card feature-card--green reveal">
+            <span class="feature-card__number">01</span>
+            <svg class="feature-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M15 28c0-11 8-19 17-19s17 8 17 19v25H15V28Z"/><path d="M23 30h18M26 39h12M24 18 18 9M40 18l6-9"/></svg>
+            <h3>Hewan terpilih dan layak</h3>
+            <p>Tim membantu menyiapkan hewan sesuai paket dan memberikan informasi yang mudah dipahami keluarga.</p>
+            <span class="feature-card__note">Informasi sebelum proses</span>
+          </article>
+
+          <article class="feature-card feature-card--peach reveal" data-delay="1">
+            <span class="feature-card__number">02</span>
+            <svg class="feature-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M12 45c10-2 17-9 20-21 4 12 10 19 20 21-9 7-31 7-40 0Z"/><path d="M21 45v8m22-8v8M32 11v13"/></svg>
+            <h3>Proses dapat didokumentasikan</h3>
+            <p>Keluarga dapat menerima dokumentasi proses sesuai kebutuhan dan kebijakan layanan yang disepakati.</p>
+            <span class="feature-card__note">Lebih transparan</span>
+          </article>
+
+          <article class="feature-card feature-card--cream reveal" data-delay="2">
+            <span class="feature-card__number">03</span>
+            <svg class="feature-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 23h48v31H8zM13 16h38v7H13z"/><path d="M21 34h22M21 43h14"/></svg>
+            <h3>Hidangan rapi, siap dibagikan</h3>
+            <p>Menu dimasak, ditata, dan dikemas agar keluarga tidak perlu mengurus banyak vendor sekaligus.</p>
+            <span class="feature-card__note">Praktis sampai akhir</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-showcase section-pad" aria-labelledby="menu-title">
+      <div class="shell menu-showcase__grid">
+        <div class="menu-visual reveal">
+          <div class="pattern pattern--one" aria-hidden="true"></div>
+          <div class="pattern pattern--two" aria-hidden="true"></div>
+          <div class="plate-scene" role="img" aria-label="Ilustrasi menu nasi, sate, gulai, acar, dan buah">
+            <div class="plate">
+              <div class="rice"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="satay satay--1"><b></b><b></b><b></b></div>
+              <div class="satay satay--2"><b></b><b></b><b></b></div>
+              <div class="gulai"><span></span></div>
+              <div class="pickle"><i></i><i></i><i></i></div>
+              <div class="leaf-garnish"><i></i><i></i><i></i></div>
+            </div>
+            <div class="plate-caption"><span>Menu favorit keluarga</span><strong>Nasi · Sate · Gulai · Acar</strong></div>
+          </div>
+        </div>
+
+        <div class="menu-copy reveal" data-delay="1">
+          <span class="kicker">Rasa yang akrab, penyajian yang niat</span>
+          <h2 id="menu-title">Menu dibuat untuk mudah dinikmati <em>dan mudah dibagikan.</em></h2>
+          <p>Komposisi paket dapat disesuaikan dengan kebutuhan acara. Pada proyek nyata, bagian ini bisa menampilkan foto menu asli, pilihan lauk, dan kapasitas produksi.</p>
+
+          <div class="menu-list">
+            <div><span>01</span><strong>Olahan utama</strong><p>Sate dan gulai kambing dengan rasa yang familiar.</p></div>
+            <div><span>02</span><strong>Pelengkap</strong><p>Nasi, acar, sambal, kerupuk, dan buah sesuai paket.</p></div>
+            <div><span>03</span><strong>Kemasan</strong><p>Nasi box berlabel nama anak dan ucapan keluarga.</p></div>
+          </div>
+
+          <a class="text-link text-link--dark" href="#paket">Bandingkan paket contoh <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages section-pad" id="paket" aria-labelledby="package-title">
+      <div class="shell">
+        <div class="section-heading section-heading--center reveal">
+          <span class="kicker">Pilih sesuai kebutuhan keluarga</span>
+          <h2 id="package-title">Paket yang jelas,<br><em>tanpa membuat Anda menebak.</em></h2>
+          <p>Harga di bawah adalah contoh untuk kebutuhan portfolio dan bukan penawaran komersial sebenarnya.</p>
+        </div>
+
+        <div class="gender-switch reveal" role="group" aria-label="Pilihan paket anak">
+          <button class="is-active" type="button" data-gender="putri" aria-pressed="true">
+            <span>Untuk putri</span><small>Contoh 1 ekor</small>
+          </button>
+          <button type="button" data-gender="putra" aria-pressed="false">
+            <span>Untuk putra</span><small>Contoh 2 ekor</small>
+          </button>
+        </div>
+
+        <div class="package-grid" data-package-grid>
+          <article class="package-card reveal" data-package="hangat">
+            <div class="package-card__head">
+              <span class="package-card__tag">Paket ringkas</span>
+              <h3>Hangat</h3>
+              <p>Untuk keluarga yang ingin membagikan hidangan secara sederhana.</p>
+            </div>
+            <div class="price"><small>mulai</small><strong data-price>Rp2.490.000</strong></div>
+            <ul>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg><span data-animal>1 ekor kambing betina</span></li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg><span data-box>50 nasi box</span></li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg>Sate, gulai, nasi & pelengkap</li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg>Dokumentasi proses</li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg>Label box sederhana</li>
+            </ul>
+            <a class="button button--outline" href="#kontak" data-cta="whatsapp" data-package-cta="Hangat" data-cta-location="package-hangat">Tanya Paket Hangat</a>
+          </article>
+
+          <article class="package-card package-card--featured reveal" data-delay="1" data-package="berkah">
+            <div class="popular-badge">Paling banyak dipilih</div>
+            <div class="package-card__head">
+              <span class="package-card__tag">Paket keluarga</span>
+              <h3>Berkah</h3>
+              <p>Komposisi lengkap untuk dibagikan kepada keluarga dan tetangga.</p>
+            </div>
+            <div class="price"><small>mulai</small><strong data-price>Rp3.190.000</strong></div>
+            <ul>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg><span data-animal>1 ekor kambing jantan</span></li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg><span data-box>70 nasi box</span></li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg>Sate, gulai, nasi & pelengkap</li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg>Dokumentasi foto & video</li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg>Desain label nama anak</li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg>Contoh gratis ongkir area tertentu</li>
+            </ul>
+            <a class="button button--primary" href="#kontak" data-cta="whatsapp" data-package-cta="Berkah" data-cta-location="package-berkah">Pilih Paket Berkah</a>
+          </article>
+
+          <article class="package-card reveal" data-delay="2" data-package="bahagia">
+            <div class="package-card__head">
+              <span class="package-card__tag">Paket acara</span>
+              <h3>Bahagia</h3>
+              <p>Untuk kebutuhan distribusi lebih luas atau acara keluarga di rumah.</p>
+            </div>
+            <div class="price"><small>mulai</small><strong data-price>Rp4.150.000</strong></div>
+            <ul>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg><span data-animal>1 ekor kambing premium</span></li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg><span data-box>100 nasi box</span></li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg>Menu lengkap & buah</li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg>Dokumentasi foto & video</li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg>Desain label custom</li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg>Prioritas jadwal produksi</li>
+            </ul>
+            <a class="button button--outline" href="#kontak" data-cta="whatsapp" data-package-cta="Bahagia" data-cta-location="package-bahagia">Tanya Paket Bahagia</a>
+          </article>
+        </div>
+
+        <div class="package-note reveal">
+          <svg viewBox="0 0 26 26" aria-hidden="true"><path d="M13 2.5A10.5 10.5 0 1 0 13 23.5 10.5 10.5 0 0 0 13 2.5ZM13 8v6m0 4h.01"/></svg>
+          <p><strong>Catatan portfolio:</strong> nama paket, jumlah box, harga, area layanan, dan benefit di halaman ini hanyalah data demonstrasi. Pada proyek klien, semuanya diganti dengan informasi usaha yang sebenarnya.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section-pad" id="proses" aria-labelledby="process-title">
+      <div class="shell process__grid">
+        <div class="process__intro reveal">
+          <span class="kicker">Alur yang sederhana</span>
+          <h2 id="process-title">Keluarga fokus pada momen.<br><em>Kami urus rangkaiannya.</em></h2>
+          <p>Alur dibuat transparan sejak konsultasi pertama agar keluarga mengetahui apa yang perlu disiapkan dan kapan pesanan diterima.</p>
+          <a class="button button--cream button--darktext" href="#kontak" data-cta="whatsapp" data-cta-location="process">Cek jadwal tersedia</a>
+        </div>
+
+        <ol class="process-list">
+          <li class="reveal">
+            <span class="process-list__number">01</span>
+            <div><h3>Konsultasi kebutuhan</h3><p>Ceritakan tanggal, area pengantaran, jumlah box, dan preferensi menu.</p></div>
+            <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M5 14h18m-7-7 7 7-7 7"/></svg>
+          </li>
+          <li class="reveal" data-delay="1">
+            <span class="process-list__number">02</span>
+            <div><h3>Pilih paket & jadwal</h3><p>CS membantu mencocokkan paket dengan kebutuhan distribusi keluarga.</p></div>
+            <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M5 14h18m-7-7 7 7-7 7"/></svg>
+          </li>
+          <li class="reveal" data-delay="2">
+            <span class="process-list__number">03</span>
+            <div><h3>Proses & dokumentasi</h3><p>Pesanan diproses sesuai jadwal dan dokumentasi dikirim bila termasuk paket.</p></div>
+            <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M5 14h18m-7-7 7 7-7 7"/></svg>
+          </li>
+          <li class="reveal" data-delay="3">
+            <span class="process-list__number">04</span>
+            <div><h3>Masak, kemas, antar</h3><p>Hidangan selesai ditata lalu dikirim ke alamat atau titik distribusi.</p></div>
+            <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M5 14h18m-7-7 7 7-7 7"/></svg>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="objections section-pad" aria-labelledby="objection-title">
+      <div class="shell">
+        <div class="section-heading section-heading--split reveal">
+          <div>
+            <span class="kicker">Hal-hal yang sering dipikirkan orang tua</span>
+            <h2 id="objection-title">Detail kecil yang membuat keputusan terasa <em>lebih aman.</em></h2>
+          </div>
+          <p>Alih-alih hanya berkata “terpercaya”, landing page perlu menjawab kekhawatiran calon pelanggan secara konkret.</p>
+        </div>
+
+        <div class="objection-grid">
+          <article class="objection-card reveal">
+            <span class="objection-card__icon">01</span>
+            <blockquote>“Bagaimana saya tahu prosesnya benar-benar dilakukan?”</blockquote>
+            <p>Informasi jadwal, status pesanan, serta opsi dokumentasi dijelaskan sebelum pembayaran.</p>
+          </article>
+          <article class="objection-card reveal" data-delay="1">
+            <span class="objection-card__icon">02</span>
+            <blockquote>“Apakah makanannya mudah dibagikan?”</blockquote>
+            <p>Jumlah box, isi menu, label, dan titik pengantaran disepakati sejak awal.</p>
+          </article>
+          <article class="objection-card reveal" data-delay="2">
+            <span class="objection-card__icon">03</span>
+            <blockquote>“Bagaimana jika saya belum tahu harus pilih paket mana?”</blockquote>
+            <p>CS menggali jumlah penerima dan kebutuhan acara sebelum memberi rekomendasi.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section-pad" id="faq" aria-labelledby="faq-title">
+      <div class="shell faq__grid">
+        <div class="faq__intro reveal">
+          <span class="kicker">Pertanyaan yang sering muncul</span>
+          <h2 id="faq-title">Sebelum keluarga<br><em>menentukan pilihan.</em></h2>
+          <p>FAQ membantu mengurangi pertanyaan berulang dan membuat calon pelanggan lebih siap ketika menghubungi CS.</p>
+          <div class="faq-contact">
+            <span>Belum menemukan jawaban?</span>
+            <a href="#kontak" data-cta="whatsapp" data-cta-location="faq">Tanyakan ke CS <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <div class="accordion" data-accordion>
+          <article class="accordion-item reveal">
+            <h3><button type="button" aria-expanded="true"><span>Apakah harga di halaman ini merupakan harga asli?</span><i></i></button></h3>
+            <div class="accordion-panel"><p>Tidak. Halaman ini dibuat khusus sebagai contoh portfolio. Semua nama paket, harga, area layanan, serta benefit dapat diganti menyesuaikan usaha aqiqah yang sebenarnya.</p></div>
+          </article>
+          <article class="accordion-item reveal" data-delay="1">
+            <h3><button type="button" aria-expanded="false"><span>Berapa hari sebelumnya sebaiknya memesan?</span><i></i></button></h3>
+            <div class="accordion-panel" hidden><p>Pada website klien, jawabannya mengikuti kapasitas operasional. Contohnya dapat ditulis minimal 3–7 hari sebelumnya, dengan keterangan bahwa jadwal tetap perlu dikonfirmasi CS.</p></div>
+          </article>
+          <article class="accordion-item reveal" data-delay="2">
+            <h3><button type="button" aria-expanded="false"><span>Apakah bisa menyesuaikan jumlah nasi box?</span><i></i></button></h3>
+            <div class="accordion-panel" hidden><p>Bisa dicantumkan sebagai opsi tambahan apabila operasional klien mendukung. Landing page juga dapat menampilkan harga box tambahan secara transparan.</p></div>
+          </article>
+          <article class="accordion-item reveal" data-delay="3">
+            <h3><button type="button" aria-expanded="false"><span>Apakah tersedia dokumentasi penyembelihan?</span><i></i></button></h3>
+            <div class="accordion-panel" hidden><p>Bagian ini sebaiknya mengikuti layanan sebenarnya. Bila tersedia, jelaskan bentuk dokumentasi, waktu pengiriman, dan apakah sudah termasuk dalam paket.</p></div>
+          </article>
+          <article class="accordion-item reveal" data-delay="4">
+            <h3><button type="button" aria-expanded="false"><span>Apakah halaman dapat memakai foto produk asli?</span><i></i></button></h3>
+            <div class="accordion-panel" hidden><p>Ya. Pada proyek klien, seluruh ilustrasi demo dapat diganti dengan foto hewan, proses, dapur, kemasan, menu, armada, sertifikat, dan testimoni asli milik usaha.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" id="kontak">
+      <div class="shell closing__inner reveal">
+        <div class="closing__copy">
+          <span class="kicker kicker--light">Satu percakapan untuk memulainya</span>
+          <h2>Siapkan aqiqah tanpa<br><em>menambah banyak pikiran.</em></h2>
+          <p>Ceritakan tanggal acara dan perkiraan jumlah box. CS akan membantu memilih paket yang paling masuk akal.</p>
+          <div class="closing__actions">
+            <a class="button button--cream button--large button--darktext" href="#" data-cta="whatsapp" data-cta-location="closing">
+              Chat WhatsApp sekarang
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M8 5h7v7"/></svg>
+            </a>
+            <span>Respon mengikuti jam operasional contoh</span>
+          </div>
+        </div>
+
+        <div class="closing__visual" aria-hidden="true">
+          <div class="closing-moon"></div>
+          <div class="gift-box gift-box--one"><span>Terima kasih</span></div>
+          <div class="gift-box gift-box--two"><span>Aqiqah Aluna</span></div>
+          <div class="closing-leaf closing-leaf--one"></div>
+          <div class="closing-leaf closing-leaf--two"></div>
+          <span class="closing-star closing-star--one">✦</span>
+          <span class="closing-star closing-star--two">✦</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer__top">
+      <a class="brand brand--footer" href="#top" aria-label="Aqiqah Aluna, kembali ke atas">
+        <svg class="brand__mark" viewBox="0 0 52 52" aria-hidden="true">
+          <circle cx="26" cy="26" r="25" fill="currentColor"/>
+          <path d="M16.4 29.7c2.3-8.5 7.3-13.3 15.1-14.5-.3 4.8-2 8.5-5.3 11.1 3.4-.1 6.5.8 9.4 2.7-4 5.4-9.5 7.8-16.4 7.2 1-2.1 2.6-4.3 4.7-6.5-2.7.5-5.2.5-7.5 0Z" fill="#173f36"/>
+        </svg>
+        <span class="brand__text"><strong>Aqiqah</strong><b>ALUNA</b></span>
+      </a>
+      <p>Contoh landing page portfolio untuk bisnis jasa aqiqah. Seluruh konten komersial bersifat demonstrasi.</p>
+      <a class="footer-wa" href="#" data-cta="whatsapp" data-cta-location="footer"><span data-whatsapp-display>Atur nomor WhatsApp</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M8 5h7v7"/></svg></a>
+    </div>
+    <div class="shell footer__bottom">
+      <span>© <span data-current-year></span> Aqiqah Aluna — Portfolio Demo</span>
+      <span>Brand, harga, testimoni, dan area layanan bersifat fiktif.</span>
+    </div>
+  </footer>
+
+  <div class="mobile-cta" data-mobile-cta>
+    <div><small>Butuh rekomendasi?</small><strong>Tanya paket aqiqah</strong></div>
+    <a href="#" data-cta="whatsapp" data-cta-location="mobile-sticky">Chat WhatsApp</a>
+  </div>
+
+  <dialog class="setup-dialog" data-setup-dialog>
+    <button class="setup-dialog__close" type="button" aria-label="Tutup" data-dialog-close>×</button>
+    <span class="setup-dialog__icon">!</span>
+    <h2>Nomor WhatsApp belum diatur</h2>
+    <p>Ganti nilai <code>whatsappNumber</code> di file <code>config.js</code> sebelum halaman dipublikasikan.</p>
+    <button class="button button--primary" type="button" data-dialog-close>Mengerti</button>
+  </dialog>
+
+  <script>
+(() => {
+  'use strict';
+
+  const config = window.AQIQAH_CONFIG || {};
+  const digitsOnly = String(config.whatsappNumber || '').replace(/\D/g, '');
+  const hasValidWhatsApp = /^\d{8,15}$/.test(digitsOnly);
+  const baseMessage = String(config.whatsappMessage || 'Halo, saya ingin konsultasi paket aqiqah.').trim();
+  const setupDialog = document.querySelector('[data-setup-dialog]');
+
+  function getWhatsAppUrl(customMessage = baseMessage) {
+    if (!hasValidWhatsApp) return '#';
+    return `https://wa.me/${digitsOnly}?text=${encodeURIComponent(customMessage)}`;
+  }
+
+  function trackWhatsAppClick(location, href, packageName = '') {
+    try {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'whatsapp_click', {
+          cta_location: location,
+          offer_name: packageName || 'Konsultasi Aqiqah',
+          page_slug: 'aqiqah-aluna-portfolio',
+          link_url: href
+        });
+      }
+    } catch (error) {
+      console.warn('GA4 tracking gagal:', error);
+    }
+
+    try {
+      if (typeof window.fbq === 'function') {
+        window.fbq('track', 'Contact', {
+          content_name: packageName || 'Konsultasi Aqiqah',
+          cta_location: location
+        });
+      }
+    } catch (error) {
+      console.warn('Meta Pixel tracking gagal:', error);
+    }
+  }
+
+  function bindWhatsAppLinks() {
+    document.querySelectorAll('[data-cta="whatsapp"]').forEach((link) => {
+      const packageName = link.dataset.packageCta || '';
+      const message = packageName
+        ? `Halo Aqiqah Aluna, saya tertarik dengan Paket ${packageName}. Bisa dibantu jelaskan detail dan cek jadwalnya?`
+        : baseMessage;
+      const href = getWhatsAppUrl(message);
+
+      link.setAttribute('href', href);
+      if (hasValidWhatsApp) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      }
+
+      link.addEventListener('click', (event) => {
+        if (!hasValidWhatsApp) {
+          event.preventDefault();
+          if (setupDialog && typeof setupDialog.showModal === 'function') setupDialog.showModal();
+          return;
+        }
+        trackWhatsAppClick(link.dataset.ctaLocation || 'unknown', href, packageName);
+      });
+    });
+  }
+
+  bindWhatsAppLinks();
+
+  document.querySelectorAll('[data-whatsapp-display]').forEach((element) => {
+    element.textContent = config.whatsappDisplay || (hasValidWhatsApp ? `+${digitsOnly}` : 'Atur nomor di config.js');
+  });
+
+  document.querySelectorAll('[data-dialog-close]').forEach((button) => {
+    button.addEventListener('click', () => setupDialog?.close());
+  });
+
+  setupDialog?.addEventListener('click', (event) => {
+    const rect = setupDialog.getBoundingClientRect();
+    const outside = event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
+    if (outside) setupDialog.close();
+  });
+
+  const menuButton = document.querySelector('[data-menu-toggle]');
+  const menu = document.querySelector('[data-menu]');
+
+  function closeMenu() {
+    menuButton?.setAttribute('aria-expanded', 'false');
+    menu?.classList.remove('is-open');
+    document.body.classList.remove('menu-open');
+  }
+
+  menuButton?.addEventListener('click', () => {
+    const open = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', String(!open));
+    menu?.classList.toggle('is-open', !open);
+    document.body.classList.toggle('menu-open', !open);
+  });
+  menu?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+  window.addEventListener('resize', () => { if (window.innerWidth > 860) closeMenu(); });
+
+  const header = document.querySelector('[data-header]');
+  const mobileCta = document.querySelector('[data-mobile-cta]');
+  function updateScrollState() {
+    const y = window.scrollY;
+    header?.classList.toggle('is-scrolled', y > 18);
+    const nearBottom = y > document.documentElement.scrollHeight - window.innerHeight - 650;
+    mobileCta?.classList.toggle('is-visible', y > 650 && !nearBottom);
+  }
+  updateScrollState();
+  window.addEventListener('scroll', updateScrollState, { passive: true });
+
+  const reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -35px' });
+    reveals.forEach((element) => observer.observe(element));
+  } else {
+    reveals.forEach((element) => element.classList.add('is-visible'));
+  }
+
+  const packageData = {
+    putri: {
+      hangat: { price: 'Rp2.490.000', animal: '1 ekor kambing betina', box: '50 nasi box' },
+      berkah: { price: 'Rp3.190.000', animal: '1 ekor kambing jantan', box: '70 nasi box' },
+      bahagia: { price: 'Rp4.150.000', animal: '1 ekor kambing premium', box: '100 nasi box' }
+    },
+    putra: {
+      hangat: { price: 'Rp4.690.000', animal: '2 ekor kambing betina', box: '100 nasi box' },
+      berkah: { price: 'Rp5.890.000', animal: '2 ekor kambing jantan', box: '140 nasi box' },
+      bahagia: { price: 'Rp7.750.000', animal: '2 ekor kambing premium', box: '200 nasi box' }
+    }
+  };
+
+  const genderButtons = document.querySelectorAll('[data-gender]');
+  function setGender(gender) {
+    const data = packageData[gender];
+    if (!data) return;
+
+    genderButtons.forEach((button) => {
+      const active = button.dataset.gender === gender;
+      button.classList.toggle('is-active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
+
+    document.querySelectorAll('[data-package]').forEach((card) => {
+      const item = data[card.dataset.package];
+      if (!item) return;
+      const price = card.querySelector('[data-price]');
+      const animal = card.querySelector('[data-animal]');
+      const box = card.querySelector('[data-box]');
+      if (price) price.textContent = item.price;
+      if (animal) animal.textContent = item.animal;
+      if (box) box.textContent = item.box;
+      card.animate([
+        { opacity: .55, transform: 'translateY(5px)' },
+        { opacity: 1, transform: 'translateY(0)' }
+      ], { duration: 260, easing: 'ease-out' });
+    });
+  }
+  genderButtons.forEach((button) => button.addEventListener('click', () => setGender(button.dataset.gender)));
+
+  document.querySelectorAll('.accordion-item button').forEach((button) => {
+    button.addEventListener('click', () => {
+      const expanded = button.getAttribute('aria-expanded') === 'true';
+      const panel = button.closest('.accordion-item')?.querySelector('.accordion-panel');
+      button.setAttribute('aria-expanded', String(!expanded));
+      if (panel) panel.hidden = expanded;
+    });
+  });
+
+  document.querySelectorAll('[data-current-year]').forEach((element) => {
+    element.textContent = String(new Date().getFullYear());
+  });
+})();
+
+  </script>
+</body>
+</html>

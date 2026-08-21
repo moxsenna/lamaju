@@ -1,0 +1,1140 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f0e7">
+  <meta name="description" content="Landing page custom siap jualan, selesai maksimal 48 jam. Cukup kirim brief dan aset—kami urus angle, copy, desain, sampai online.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://contoh-domain-anda.com/">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTgiIGZpbGw9IiNjOWZmNGQiLz4KICA8cGF0aCBkPSJNMTggMTZoMTB2MjBjMCA0IDIgNiA2LjMgNkg0NnYxMEgzM2MtMTAgMC0xNS01LTE1LTE1VjE2WiIgZmlsbD0iIzE0MTQxNCIvPgogIDxwYXRoIGQ9Ik0zNSAxNmgxMXYxOUgzNXoiIGZpbGw9IiMxNDE0MTQiLz4KPC9zdmc+Cg==" type="image/svg+xml">
+  <style>
+:root {
+  --paper: #f4f0e7;
+  --paper-2: #fffdf7;
+  --ink: #141414;
+  --muted: #69665e;
+  --line: rgba(20, 20, 20, 0.16);
+  --lime: #c9ff4d;
+  --orange: #ff6542;
+  --blue: #506dff;
+  --cream: #eadfcf;
+  --shadow: 0 28px 80px rgba(20, 20, 20, 0.14);
+  --shell: min(1180px, calc(100% - 40px));
+  --radius-sm: 12px;
+  --radius-md: 22px;
+  --radius-lg: 34px;
+  --sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+body.menu-open { overflow: hidden; }
+a { color: inherit; }
+button, input, textarea, select { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+img, svg { display: block; max-width: 100%; }
+::selection { background: var(--lime); color: var(--ink); }
+:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+.skip-link {
+  position: fixed; top: 8px; left: 8px; z-index: 200; padding: 10px 14px;
+  background: var(--ink); color: white; transform: translateY(-140%); border-radius: 8px;
+}
+.skip-link:focus { transform: translateY(0); }
+.shell { width: var(--shell); margin-inline: auto; }
+.section-pad { padding: clamp(88px, 11vw, 156px) 0; }
+
+.ticker {
+  overflow: hidden; height: 32px; display: flex; align-items: center;
+  background: var(--ink); color: white; text-transform: uppercase; letter-spacing: .15em;
+  font-size: 10px; font-weight: 800;
+}
+.ticker__track { display: flex; align-items: center; gap: 24px; width: max-content; animation: ticker 30s linear infinite; }
+.ticker i { width: 5px; height: 5px; border-radius: 50%; background: var(--lime); flex: 0 0 auto; }
+@keyframes ticker { to { transform: translateX(-50%); } }
+
+.site-header {
+  position: sticky; top: 0; z-index: 90; border-bottom: 1px solid transparent;
+  background: color-mix(in srgb, var(--paper) 88%, transparent); backdrop-filter: blur(14px);
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+.site-header.is-scrolled { border-bottom-color: var(--line); box-shadow: 0 12px 30px rgba(20,20,20,.04); }
+.nav-wrap { min-height: 80px; display: flex; align-items: center; justify-content: space-between; }
+.brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; font-weight: 900; letter-spacing: -.04em; font-size: 21px; }
+.brand__mark { width: 38px; height: 38px; color: var(--lime); }
+.site-nav { display: flex; align-items: center; gap: 30px; }
+.site-nav > a:not(.button) { text-decoration: none; font-size: 14px; font-weight: 700; }
+.site-nav > a:not(.button)::after { content: ""; display: block; height: 1px; width: 0; background: currentColor; transition: width .25s ease; }
+.site-nav > a:not(.button):hover::after { width: 100%; }
+.menu-toggle { display: none; width: 44px; height: 44px; border: 0; background: transparent; padding: 11px; }
+.menu-toggle span:not(.sr-only) { display: block; height: 2px; margin: 6px 0; background: var(--ink); transition: transform .2s ease; }
+.menu-toggle[aria-expanded="true"] span:nth-of-type(2) { transform: translateY(4px) rotate(45deg); }
+.menu-toggle[aria-expanded="true"] span:nth-of-type(3) { transform: translateY(-4px) rotate(-45deg); }
+
+.button {
+  min-height: 52px; padding: 0 22px; border: 1px solid var(--ink); border-radius: 999px;
+  display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+  text-decoration: none; font-weight: 850; letter-spacing: -.015em; cursor: pointer;
+  transition: transform .22s ease, box-shadow .22s ease, background .22s ease;
+}
+.button:hover { transform: translateY(-2px); box-shadow: 0 10px 0 rgba(20,20,20,.12); }
+.button svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+.button--primary { background: var(--lime); color: var(--ink); }
+.button--dark { background: var(--ink); color: white; }
+.button--light { background: white; color: var(--ink); border-color: white; }
+.button--small { min-height: 44px; padding-inline: 17px; font-size: 13px; }
+.button--large { min-height: 62px; padding-inline: 28px; }
+.button--full { width: 100%; }
+.text-link { font-weight: 800; text-underline-offset: 5px; }
+.text-link span { display: inline-block; margin-left: 5px; transition: transform .2s ease; }
+.text-link:hover span { transform: translateY(3px); }
+
+.hero { overflow: hidden; padding: clamp(70px, 8vw, 118px) 0 32px; }
+.hero__grid { display: grid; grid-template-columns: minmax(0, .93fr) minmax(440px, 1.07fr); gap: clamp(45px, 7vw, 92px); align-items: center; }
+.eyebrow, .kicker { text-transform: uppercase; letter-spacing: .15em; font-size: 11px; font-weight: 900; }
+.eyebrow { display: flex; align-items: center; gap: 10px; margin-bottom: 24px; }
+.eyebrow span { width: 10px; height: 10px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 0 6px color-mix(in srgb, var(--orange) 18%, transparent); }
+.hero h1, .section-intro h2, .outcome h2, .showcase h2, .process h2, .pricing h2, .guarantee h2, .faq h2, .final-cta h2 {
+  margin: 0; font-size: clamp(47px, 6vw, 82px); line-height: .98; letter-spacing: -.065em;
+}
+em { font-family: var(--serif); font-weight: 500; letter-spacing: -.055em; }
+.hero__lead { max-width: 630px; margin: 28px 0 0; font-size: clamp(18px, 2vw, 21px); color: var(--muted); line-height: 1.55; }
+.hero__actions { display: flex; align-items: center; flex-wrap: wrap; gap: 22px; margin-top: 34px; }
+.hero__facts { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); max-width: 600px; padding: 30px 0 0; margin: 42px 0 0; border-top: 1px solid var(--line); }
+.hero__facts li { display: flex; flex-direction: column; padding-right: 14px; }
+.hero__facts li + li { padding-left: 20px; border-left: 1px solid var(--line); }
+.hero__facts strong { font-size: 21px; letter-spacing: -.04em; }
+.hero__facts span { color: var(--muted); font-size: 13px; }
+
+.hero__visual { position: relative; min-height: 610px; display: flex; align-items: center; justify-content: center; perspective: 1200px; }
+.orbit { position: absolute; border: 1px solid rgba(20,20,20,.11); border-radius: 50%; }
+.orbit--one { width: 570px; height: 570px; }
+.orbit--two { width: 420px; height: 420px; border-style: dashed; animation: rotate 50s linear infinite; }
+@keyframes rotate { to { transform: rotate(360deg); } }
+.browser-card { width: min(100%, 540px); position: relative; z-index: 2; border: 1px solid var(--ink); border-radius: 22px; overflow: hidden; background: #fff; box-shadow: 24px 28px 0 var(--ink), var(--shadow); transform: rotate(1.6deg); transition: transform .25s ease; }
+.browser-card__bar { height: 42px; display: grid; grid-template-columns: 72px 1fr 25px; align-items: center; padding: 0 12px; border-bottom: 1px solid rgba(20,20,20,.16); background: #f6f4ef; }
+.browser-dots { display: flex; gap: 5px; }
+.browser-dots i { width: 7px; height: 7px; border-radius: 50%; background: #d7d2c8; }
+.browser-url { justify-self: center; width: 220px; padding: 4px 12px; text-align: center; border-radius: 99px; background: white; font-size: 9px; color: #67615a; }
+.browser-lock { color: #817b73; font-size: 8px; }
+.mock-page--coffee { color: #f9e9cf; background: #1c1713; min-height: 500px; padding: 22px; }
+.mock-nav { display: flex; align-items: center; justify-content: space-between; font-size: 9px; letter-spacing: .18em; }
+.mock-nav span { padding: 6px 10px; border: 1px solid rgba(255,255,255,.25); border-radius: 99px; }
+.mock-hero { display: grid; grid-template-columns: .95fr 1.05fr; min-height: 370px; align-items: center; }
+.mock-copy small { color: #f0a54e; font-size: 7px; letter-spacing: .16em; font-weight: 900; }
+.mock-copy h2 { margin: 12px 0 13px; max-width: 240px; font-family: var(--serif); font-weight: 500; font-size: 32px; line-height: .97; letter-spacing: -.04em; }
+.mock-copy p { font-size: 10px; line-height: 1.6; color: rgba(255,255,255,.66); max-width: 210px; }
+.mock-copy button { margin-top: 11px; padding: 9px 12px; border: 0; border-radius: 99px; color: #241b15; background: #f1a54d; font-size: 8px; font-weight: 900; }
+.bottle-scene { position: relative; height: 330px; }
+.sun-disc { position: absolute; width: 210px; height: 210px; border-radius: 50%; top: 60px; left: 20px; background: #f1a54d; box-shadow: inset 20px -15px 0 rgba(0,0,0,.05); }
+.bottle { position: absolute; z-index: 2; width: 98px; left: 80px; top: 62px; filter: drop-shadow(16px 20px 13px rgba(0,0,0,.3)); }
+.bottle__cap { width: 55px; height: 20px; margin: 0 auto; border-radius: 5px 5px 2px 2px; background: repeating-linear-gradient(90deg,#2a211b 0 3px,#4a382d 3px 5px); }
+.bottle__neck { width: 47px; height: 28px; margin: 0 auto; background: #412c1e; }
+.bottle__body { height: 206px; padding-top: 62px; border-radius: 23px 23px 16px 16px; background: linear-gradient(90deg,#2e1a10,#6a3b1e 45%,#25140d); text-align: center; border: 2px solid rgba(255,255,255,.11); }
+.bottle__body span { font-size: 17px; line-height: .9; font-weight: 900; letter-spacing: -.06em; }
+.bottle__body small { display: block; margin-top: 10px; font-size: 6px; text-transform: uppercase; letter-spacing: .2em; }
+.bean { position: absolute; z-index: 3; width: 24px; height: 17px; border-radius: 50% 45%; background: #3b2114; transform: rotate(35deg); box-shadow: inset 3px -2px 4px rgba(0,0,0,.35); }
+.bean::after { content: ""; position: absolute; left: 11px; top: 2px; width: 1px; height: 13px; background: #8e603d; transform: rotate(-12deg); }
+.bean--1 { left: 19px; top: 75px; transform: rotate(15deg); }
+.bean--2 { right: 8px; top: 120px; transform: rotate(70deg); }
+.bean--3 { left: 42px; bottom: 18px; transform: rotate(-18deg); }
+.mock-proof { display: grid; grid-template-columns: repeat(3,1fr); border-top: 1px solid rgba(255,255,255,.16); padding-top: 16px; }
+.mock-proof span { display: flex; align-items: baseline; gap: 5px; color: rgba(255,255,255,.58); font-size: 7px; }
+.mock-proof b { color: #f9e9cf; font-size: 14px; }
+.floating-note { position: absolute; z-index: 4; display: flex; align-items: center; gap: 10px; padding: 12px 14px; border: 1px solid var(--ink); border-radius: 13px; background: var(--paper-2); box-shadow: 8px 10px 0 var(--ink); }
+.floating-note small, .floating-note strong { display: block; line-height: 1.2; }
+.floating-note small { font-size: 9px; color: var(--muted); }
+.floating-note strong { margin-top: 4px; font-size: 12px; }
+.floating-note--top { top: 63px; right: -22px; transform: rotate(3deg); }
+.floating-note--bottom { bottom: 47px; left: -34px; transform: rotate(-3deg); }
+.note-icon { width: 31px; height: 31px; display: grid; place-items: center; border-radius: 50%; background: var(--lime); font-weight: 900; }
+.pulse-dot { width: 12px; height: 12px; margin-inline: 9px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 0 8px rgba(255,101,66,.16); }
+.hero__footnote { display: flex; justify-content: flex-end; align-items: center; gap: 18px; margin-top: 52px; color: var(--muted); font-size: 12px; }
+.hero__footnote svg { width: 70px; fill: none; stroke: var(--ink); }
+
+.section-intro { max-width: 930px; }
+.kicker { margin-bottom: 24px; color: var(--muted); }
+.problem { border-top: 1px solid var(--line); }
+.problem .section-intro h2 { font-size: clamp(43px, 5.5vw, 72px); }
+.problem-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; margin-top: 64px; }
+.problem-card { position: relative; min-height: 430px; overflow: hidden; padding: 28px; border: 1px solid var(--ink); border-radius: var(--radius-md); background: var(--paper-2); display: flex; flex-direction: column; justify-content: flex-end; }
+.problem-card--dark { background: var(--ink); color: white; }
+.problem-card--accent { background: var(--lime); }
+.problem-card__number { position: absolute; top: 25px; left: 28px; font-size: 12px; font-weight: 900; }
+.problem-card h3 { position: relative; z-index: 2; margin: 0 0 12px; max-width: 280px; font-size: 29px; line-height: 1.05; letter-spacing: -.045em; }
+.problem-card p { position: relative; z-index: 2; margin: 0; color: var(--muted); font-size: 14px; }
+.problem-card--dark p { color: rgba(255,255,255,.62); }
+.problem-card__shape { position: absolute; top: 60px; left: 50%; transform: translateX(-50%); }
+.shape-a { width: 180px; height: 180px; border: 1px solid var(--ink); border-radius: 50%; box-shadow: inset 0 0 0 40px var(--orange), inset 0 0 0 41px var(--ink); }
+.shape-a::after { content: "?"; position: absolute; inset: 0; display: grid; place-items: center; font: 500 76px/1 var(--serif); }
+.shape-b { width: 160px; height: 190px; border: 1px solid rgba(255,255,255,.35); transform: translateX(-50%) rotate(14deg); box-shadow: 22px -18px 0 var(--blue), -20px 25px 0 var(--orange); }
+.shape-c { width: 190px; height: 130px; border: 1px solid var(--ink); border-radius: 999px; }
+.shape-c::before { content: "CLICK"; position: absolute; inset: 0; display: grid; place-items: center; font-size: 20px; font-weight: 950; letter-spacing: .08em; }
+.shape-c::after { content: "↘"; position: absolute; right: -12px; bottom: -44px; font-size: 70px; line-height: 1; }
+
+.outcome { background: var(--paper-2); border-block: 1px solid var(--line); }
+.outcome__grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(50px, 8vw, 120px); align-items: start; }
+.outcome__sticky { position: sticky; top: 120px; }
+.outcome h2 { font-size: clamp(43px, 5vw, 67px); }
+.outcome__sticky > p { margin: 28px 0 32px; max-width: 520px; color: var(--muted); font-size: 18px; }
+.deliverables { border-top: 1px solid var(--ink); }
+.deliverable { display: grid; grid-template-columns: 105px 1fr; gap: 25px; padding: 36px 0; border-bottom: 1px solid var(--line); }
+.deliverable > div:last-child > span { font-size: 11px; font-weight: 900; color: var(--muted); }
+.deliverable h3 { margin: 6px 0 9px; font-size: 28px; line-height: 1.12; letter-spacing: -.04em; }
+.deliverable p { margin: 0; color: var(--muted); }
+.deliverable__icon { width: 86px; height: 86px; position: relative; display: grid; place-items: center; border: 1px solid var(--ink); border-radius: 50%; font-weight: 900; font-size: 28px; }
+.icon-target::before, .icon-target::after, .icon-target i { content: ""; position: absolute; border: 1px solid var(--ink); border-radius: 50%; }
+.icon-target::before { inset: 14px; } .icon-target::after { inset: 29px; background: var(--orange); } .icon-target i { inset: 38px; background: var(--ink); }
+.icon-type { font-family: var(--serif); background: var(--cream); }
+.icon-layout { grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(2,1fr); padding: 16px; gap: 5px; }
+.icon-layout i { width: 100%; height: 100%; border: 1px solid var(--ink); background: var(--blue); }
+.icon-layout i:first-child { grid-row: span 2; background: var(--lime); }
+.icon-phone::before { content: ""; width: 30px; height: 48px; border: 2px solid var(--ink); border-radius: 7px; }
+.icon-phone i { position: absolute; bottom: 23px; width: 4px; height: 4px; border-radius: 50%; background: var(--ink); }
+.icon-speed::before { content: ""; width: 47px; height: 47px; border: 2px solid var(--ink); border-radius: 50%; border-left-color: transparent; transform: rotate(-20deg); }
+.icon-speed i { position: absolute; width: 28px; height: 2px; background: var(--orange); transform: rotate(-34deg); transform-origin: left; left: 42px; top: 44px; }
+
+.showcase { overflow: hidden; }
+.showcase__head { display: grid; grid-template-columns: 1.5fr .6fr; gap: 60px; align-items: end; }
+.showcase h2 { font-size: clamp(43px, 5.4vw, 70px); }
+.showcase__head > p { margin: 0 0 4px; color: var(--muted); }
+.showcase__controls { display: flex; gap: 8px; margin: 48px 0 22px; }
+.showcase-tab { min-height: 44px; padding: 0 18px; border: 1px solid var(--ink); border-radius: 99px; background: transparent; font-weight: 850; cursor: pointer; }
+.showcase-tab.is-active { background: var(--ink); color: white; }
+.demo-stage { --demo-bg: #ecd9d1; --demo-ink: #2c1f1e; --demo-accent: #b66d59; display: grid; grid-template-columns: .62fr 1.38fr; min-height: 610px; border: 1px solid var(--ink); border-radius: var(--radius-lg); overflow: hidden; background: var(--demo-bg); transition: background .35s ease; }
+.demo-stage[data-theme="food"] { --demo-bg: #d5ef91; --demo-ink: #1d2916; --demo-accent: #ed5b37; }
+.demo-stage[data-theme="service"] { --demo-bg: #cbd7ff; --demo-ink: #151b3f; --demo-accent: #f7d94c; }
+.demo-stage__meta { padding: clamp(34px, 5vw, 64px); display: flex; flex-direction: column; justify-content: center; border-right: 1px solid var(--ink); }
+.demo-stage__meta > span { font-size: 10px; letter-spacing: .16em; font-weight: 900; }
+.demo-stage__meta h3 { margin: 18px 0; font: 500 clamp(35px,4vw,53px)/1 var(--serif); letter-spacing: -.045em; }
+.demo-stage__meta > p { color: color-mix(in srgb, var(--demo-ink) 67%, transparent); }
+.demo-stage__meta ul { list-style: none; margin: 44px 0 0; padding: 0; border-top: 1px solid color-mix(in srgb,var(--demo-ink) 24%,transparent); }
+.demo-stage__meta li { display: flex; justify-content: space-between; gap: 20px; padding: 12px 0; border-bottom: 1px solid color-mix(in srgb,var(--demo-ink) 24%,transparent); font-size: 12px; }
+.demo-stage__meta li span { color: color-mix(in srgb,var(--demo-ink) 58%,transparent); }
+.demo-browser { margin: clamp(36px,5vw,66px); align-self: center; border: 1px solid var(--demo-ink); border-radius: 14px; overflow: hidden; background: white; box-shadow: 18px 20px 0 var(--demo-ink); }
+.demo-browser__chrome { height: 32px; display: flex; align-items: center; gap: 5px; padding: 0 11px; border-bottom: 1px solid color-mix(in srgb,var(--demo-ink) 20%,transparent); background: #f3f1ec; }
+.demo-browser__chrome i { width: 6px; height: 6px; border-radius: 50%; background: #cbc6bd; }
+.demo-browser__chrome span { margin-left: auto; margin-right: auto; font-size: 8px; color: #777; }
+.demo-canvas { min-height: 440px; padding: 21px; color: var(--demo-ink); background: color-mix(in srgb, var(--demo-bg) 68%, white); transition: background .35s ease, color .35s ease; }
+.demo-canvas__nav { display: flex; justify-content: space-between; font-size: 8px; letter-spacing: .1em; }
+.demo-canvas__content { display: grid; grid-template-columns: 1fr .9fr; align-items: center; min-height: 330px; }
+.demo-canvas__copy small { font-size: 7px; letter-spacing: .14em; font-weight: 900; }
+.demo-canvas__copy h4 { margin: 13px 0 12px; max-width: 330px; font: 500 34px/.95 var(--serif); letter-spacing: -.045em; }
+.demo-canvas__copy p { max-width: 290px; font-size: 10px; line-height: 1.5; color: color-mix(in srgb,var(--demo-ink) 65%,transparent); }
+.demo-canvas__copy button { margin-top: 11px; padding: 9px 13px; border: 1px solid var(--demo-ink); border-radius: 99px; background: var(--demo-ink); color: white; font-size: 8px; font-weight: 900; }
+.demo-art { position: relative; height: 300px; display: grid; place-items: center; }
+.demo-art__halo { position: absolute; width: 215px; height: 215px; border-radius: 50%; background: var(--demo-accent); transition: background .35s ease; }
+.demo-product { position: relative; z-index: 2; display: grid; place-items: center; filter: drop-shadow(13px 18px 10px rgba(0,0,0,.17)); transition: transform .35s ease, border-radius .35s ease; }
+.product-dropper { width: 76px; height: 180px; padding-top: 45px; border-radius: 12px 12px 20px 20px; background: linear-gradient(90deg,#542d27,#a46a5f,#4c2823); color: #f9e8df; font-size: 11px; letter-spacing: .12em; font-weight: 900; }
+.product-dropper i { position: absolute; top: -43px; width: 44px; height: 62px; border-radius: 8px 8px 3px 3px; background: #2c1f1e; }
+.product-cup { width: 130px; height: 150px; border-radius: 8px 8px 40px 40px; background: #f8f0db; color: #1d2916; border: 5px solid #1d2916; font: 900 16px/1 var(--sans); transform: rotate(-5deg); }
+.product-cup::before { content: ""; position: absolute; right: -48px; top: 29px; width: 50px; height: 64px; border: 5px solid #1d2916; border-left: 0; border-radius: 0 40px 40px 0; }
+.product-card { width: 145px; height: 192px; border-radius: 6px; background: #151b3f; color: #f7d94c; border: 2px solid #151b3f; transform: rotate(5deg); font: 900 13px/1.2 var(--sans); text-align: center; }
+.product-card::before { content: "↗"; position: absolute; top: 20px; right: 20px; font-size: 28px; }
+.demo-art__line { position: absolute; width: 260px; height: 80px; border-bottom: 1px solid var(--demo-ink); border-radius: 50%; bottom: 10px; }
+.demo-canvas__footer { display: flex; justify-content: space-between; gap: 15px; padding-top: 14px; border-top: 1px solid color-mix(in srgb,var(--demo-ink) 24%,transparent); font-size: 7px; letter-spacing: .12em; }
+.demo-disclaimer { margin: 18px 0 0; color: var(--muted); font-size: 11px; }
+
+.process { background: var(--ink); color: white; }
+.process__intro { display: grid; grid-template-columns: 1.3fr .7fr; column-gap: 70px; align-items: end; }
+.process .kicker { grid-column: 1 / -1; color: rgba(255,255,255,.55); }
+.process h2 { font-size: clamp(43px,5.3vw,70px); }
+.process__intro p { margin: 0 0 5px; color: rgba(255,255,255,.6); }
+.process-list { list-style: none; padding: 0; margin: 75px 0 0; border-top: 1px solid rgba(255,255,255,.3); }
+.process-item { display: grid; grid-template-columns: 85px 1fr 150px; gap: 25px; align-items: center; padding: 32px 0; border-bottom: 1px solid rgba(255,255,255,.18); }
+.process-item__num { font: italic 500 28px/1 var(--serif); color: var(--lime); }
+.process-item h3 { margin: 0 0 5px; font-size: 25px; letter-spacing: -.035em; }
+.process-item p { margin: 0; color: rgba(255,255,255,.58); }
+.process-item__tag { justify-self: end; padding: 7px 11px; border: 1px solid rgba(255,255,255,.32); border-radius: 99px; font-size: 10px; text-transform: uppercase; letter-spacing: .12em; }
+
+.pricing { background: var(--orange); }
+.pricing__grid { display: grid; grid-template-columns: 1fr .82fr; gap: clamp(55px,8vw,120px); align-items: center; }
+.pricing h2 { font-size: clamp(45px,5.4vw,72px); }
+.pricing__copy > p { max-width: 600px; font-size: 18px; }
+.guarantee-stamp { position: relative; width: 180px; height: 180px; margin-top: 45px; display: grid; place-items: center; }
+.guarantee-stamp svg { position: absolute; inset: 0; animation: rotate 24s linear infinite; }
+.guarantee-stamp text { font-size: 9px; font-weight: 900; letter-spacing: 1.9px; fill: var(--ink); }
+.guarantee-stamp div { width: 105px; height: 105px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 2px solid var(--ink); border-radius: 50%; background: var(--lime); line-height: .8; }
+.guarantee-stamp strong { font-size: 42px; letter-spacing: -.06em; }
+.guarantee-stamp span { font-size: 11px; font-weight: 950; letter-spacing: .15em; }
+.price-card { padding: 28px; border: 2px solid var(--ink); border-radius: var(--radius-md); background: var(--paper-2); box-shadow: 14px 15px 0 var(--ink); }
+.price-card__top { display: flex; justify-content: space-between; gap: 15px; padding-bottom: 20px; border-bottom: 1px solid var(--line); font-size: 9px; font-weight: 900; letter-spacing: .13em; }
+.price-card__price { display: flex; align-items: flex-start; margin-top: 24px; line-height: 1; }
+.price-card__price sup { margin-top: 14px; font-size: 18px; font-weight: 900; }
+.price-card__price strong { font-size: clamp(74px,9vw,105px); letter-spacing: -.085em; }
+.price-card__price > span { margin-top: 52px; font-size: 28px; font-weight: 900; letter-spacing: -.05em; }
+.price-card__caption { margin: 0 0 24px; color: var(--muted); font-size: 13px; }
+.scope-list { list-style: none; margin: 0 0 28px; padding: 0; }
+.scope-list li { display: flex; gap: 11px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+.scope-list li span { font-weight: 900; }
+.price-card > small { display: block; margin-top: 14px; color: var(--muted); font-size: 10px; line-height: 1.5; }
+
+.guarantee { background: var(--paper-2); }
+.guarantee__inner { display: grid; grid-template-columns: .38fr 1fr .8fr; border: 1px solid var(--ink); border-radius: var(--radius-lg); overflow: hidden; }
+.guarantee__label { display: flex; align-items: center; justify-content: center; min-height: 330px; padding: 20px; background: var(--lime); border-right: 1px solid var(--ink); writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11px; font-weight: 950; letter-spacing: .18em; }
+.guarantee__copy, .guarantee__terms { padding: clamp(35px,5vw,63px); }
+.guarantee__copy { border-right: 1px solid var(--line); }
+.guarantee h2 { font-size: clamp(40px,4.4vw,60px); }
+.guarantee__copy p { color: var(--muted); }
+.guarantee__terms { align-self: center; }
+.guarantee__terms > span { font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: .12em; }
+.guarantee__terms ul { margin: 22px 0; padding-left: 19px; }
+.guarantee__terms li { margin: 9px 0; }
+.guarantee__terms small { color: var(--muted); }
+
+.faq { border-top: 1px solid var(--line); }
+.faq__grid { display: grid; grid-template-columns: .75fr 1.25fr; gap: 90px; }
+.faq h2 { font-size: clamp(43px,5vw,66px); }
+.faq-list { border-top: 1px solid var(--ink); }
+details { border-bottom: 1px solid var(--line); }
+summary { list-style: none; min-height: 85px; display: flex; align-items: center; justify-content: space-between; gap: 20px; cursor: pointer; font-size: 19px; font-weight: 850; letter-spacing: -.025em; }
+summary::-webkit-details-marker { display: none; }
+summary span { position: relative; width: 28px; height: 28px; flex: 0 0 auto; border: 1px solid var(--ink); border-radius: 50%; }
+summary span::before, summary span::after { content: ""; position: absolute; width: 10px; height: 1px; top: 13px; left: 8px; background: var(--ink); transition: transform .2s ease; }
+summary span::after { transform: rotate(90deg); }
+details[open] summary span::after { transform: rotate(0); }
+details p { margin: -6px 55px 28px 0; color: var(--muted); }
+
+.final-cta { position: relative; overflow: hidden; background: var(--blue); color: white; padding: clamp(100px,13vw,175px) 0; text-align: center; }
+.final-cta__noise { position: absolute; inset: 0; opacity: .13; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E"); }
+.final-cta__inner { position: relative; z-index: 2; }
+.final-cta__eyebrow { font-size: 10px; font-weight: 900; letter-spacing: .18em; }
+.final-cta h2 { margin-top: 25px; font-size: clamp(55px,8vw,108px); }
+.final-cta p { max-width: 700px; margin: 28px auto 35px; color: rgba(255,255,255,.75); font-size: 18px; }
+.final-cta__meta { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 15px; margin-top: 38px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.72); }
+.final-cta__meta i { width: 4px; height: 4px; border-radius: 50%; background: var(--lime); }
+
+.site-footer { padding: 62px 0 28px; background: var(--ink); color: white; }
+.site-footer__top { display: grid; grid-template-columns: .7fr 1fr .8fr; align-items: end; gap: 60px; padding-bottom: 50px; }
+.brand--footer .brand__mark { color: var(--orange); }
+.site-footer__top > p { max-width: 380px; margin: 0; color: rgba(255,255,255,.55); }
+.footer-contact { justify-self: end; text-decoration: none; }
+.footer-contact span, .footer-contact strong { display: block; text-align: right; }
+.footer-contact span { font-size: 10px; text-transform: uppercase; letter-spacing: .13em; color: rgba(255,255,255,.55); }
+.footer-contact strong { margin-top: 6px; font-size: 17px; }
+.site-footer__bottom { display: flex; justify-content: space-between; gap: 30px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.16); color: rgba(255,255,255,.42); font-size: 10px; }
+
+.sticky-mobile-cta { display: none; }
+.setup-dialog { width: min(420px, calc(100% - 32px)); padding: 33px; border: 1px solid var(--ink); border-radius: 20px; box-shadow: 12px 14px 0 var(--ink); background: var(--paper-2); }
+.setup-dialog::backdrop { background: rgba(20,20,20,.7); backdrop-filter: blur(4px); }
+.dialog-close { position: absolute; top: 12px; right: 14px; width: 40px; height: 40px; border: 0; background: transparent; font-size: 27px; cursor: pointer; }
+.dialog-icon { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 50%; background: var(--lime); font-size: 23px; font-weight: 900; }
+.setup-dialog h2 { margin: 20px 0 8px; font-size: 29px; line-height: 1.05; letter-spacing: -.045em; }
+.setup-dialog p { color: var(--muted); }
+.setup-dialog code { padding: 2px 5px; background: #eee9df; border-radius: 4px; }
+.noscript { position: fixed; z-index: 999; bottom: 0; left: 0; right: 0; padding: 12px; background: #8b1d1d; color: white; text-align: center; }
+
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .65s ease, transform .65s cubic-bezier(.2,.75,.25,1); transition-delay: calc(var(--delay, 0) * 90ms); }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+[data-delay="1"] { --delay: 1; } [data-delay="2"] { --delay: 2; }
+
+@media (max-width: 1050px) {
+  .hero__grid { grid-template-columns: 1fr; }
+  .hero__copy { max-width: 790px; }
+  .hero__visual { width: min(650px,100%); margin-inline: auto; }
+  .problem-grid { grid-template-columns: 1fr 1fr; }
+  .problem-card:last-child { grid-column: 1 / -1; min-height: 340px; }
+  .outcome__grid { grid-template-columns: 1fr; }
+  .outcome__sticky { position: static; }
+  .showcase__head, .process__intro { grid-template-columns: 1fr; }
+  .showcase__head > p, .process__intro p { max-width: 650px; margin-top: 20px; }
+  .demo-stage { grid-template-columns: 1fr; }
+  .demo-stage__meta { border-right: 0; border-bottom: 1px solid var(--ink); }
+  .pricing__grid { grid-template-columns: 1fr; }
+  .pricing__copy { display: grid; grid-template-columns: 1fr 190px; column-gap: 30px; align-items: end; }
+  .pricing__copy .kicker, .pricing__copy h2 { grid-column: 1 / -1; }
+  .guarantee-stamp { grid-column: 2; grid-row: 3 / 5; }
+  .guarantee__inner { grid-template-columns: 80px 1fr; }
+  .guarantee__terms { grid-column: 2; border-top: 1px solid var(--line); }
+  .guarantee__copy { border-right: 0; }
+  .faq__grid { grid-template-columns: 1fr; gap: 55px; }
+}
+
+@media (max-width: 760px) {
+  :root { --shell: min(100% - 28px, 1180px); }
+  body { padding-bottom: 76px; }
+  .ticker { height: 28px; }
+  .nav-wrap { min-height: 68px; }
+  .menu-toggle { display: block; }
+  .site-nav { position: fixed; inset: 96px 14px auto; display: flex; flex-direction: column; align-items: stretch; gap: 0; padding: 16px; border: 1px solid var(--ink); border-radius: 18px; background: var(--paper-2); box-shadow: 9px 10px 0 var(--ink); transform: translateY(-20px); opacity: 0; visibility: hidden; transition: .22s ease; }
+  .site-nav.is-open { transform: translateY(0); opacity: 1; visibility: visible; }
+  .site-nav > a:not(.button) { padding: 14px 5px; border-bottom: 1px solid var(--line); font-size: 17px; }
+  .site-nav .button { margin-top: 13px; }
+  .hero { padding-top: 62px; }
+  .hero h1 { font-size: clamp(47px,14vw,69px); }
+  .hero__lead { font-size: 17px; }
+  .hero__actions { align-items: stretch; flex-direction: column; }
+  .hero__actions .button { width: 100%; }
+  .text-link { align-self: flex-start; }
+  .hero__facts { margin-top: 32px; padding-top: 24px; }
+  .hero__facts strong { font-size: 18px; }
+  .hero__facts span { font-size: 10px; }
+  .hero__visual { min-height: 465px; margin-top: 35px; }
+  .orbit--one { width: 390px; height: 390px; }
+  .orbit--two { width: 300px; height: 300px; }
+  .browser-card { width: 88%; box-shadow: 12px 14px 0 var(--ink), var(--shadow); }
+  .browser-card__bar { height: 34px; grid-template-columns: 55px 1fr 20px; }
+  .browser-url { width: 155px; }
+  .mock-page--coffee { min-height: 356px; padding: 15px; }
+  .mock-hero { min-height: 270px; }
+  .mock-copy h2 { font-size: 23px; }
+  .mock-copy p { font-size: 7px; }
+  .bottle-scene { height: 230px; }
+  .sun-disc { width: 150px; height: 150px; left: 2px; top: 42px; }
+  .bottle { width: 70px; left: 45px; top: 42px; }
+  .bottle__cap { width: 41px; height: 15px; }
+  .bottle__neck { width: 35px; height: 20px; }
+  .bottle__body { height: 145px; padding-top: 42px; border-radius: 16px 16px 12px 12px; }
+  .bottle__body span { font-size: 12px; }
+  .floating-note { padding: 9px 11px; }
+  .floating-note--top { top: 25px; right: -2px; }
+  .floating-note--bottom { bottom: 24px; left: -3px; }
+  .floating-note strong { font-size: 10px; }
+  .note-icon { width: 26px; height: 26px; }
+  .hero__footnote { justify-content: flex-start; margin-top: 24px; }
+  .hero__footnote svg { display: none; }
+  .section-pad { padding: 90px 0; }
+  .problem .section-intro h2, .outcome h2, .showcase h2, .process h2, .pricing h2, .guarantee h2, .faq h2 { font-size: clamp(40px,12vw,56px); }
+  .problem-grid { grid-template-columns: 1fr; margin-top: 42px; }
+  .problem-card, .problem-card:last-child { grid-column: auto; min-height: 380px; }
+  .deliverable { grid-template-columns: 76px 1fr; gap: 18px; }
+  .deliverable__icon { width: 68px; height: 68px; }
+  .deliverable h3 { font-size: 23px; }
+  .showcase__controls { overflow-x: auto; padding-bottom: 4px; }
+  .demo-stage__meta { padding: 34px 24px; }
+  .demo-browser { margin: 30px 16px 42px; box-shadow: 10px 12px 0 var(--demo-ink); }
+  .demo-canvas { min-height: 390px; padding: 15px; }
+  .demo-canvas__content { min-height: 290px; }
+  .demo-canvas__copy h4 { font-size: 24px; }
+  .demo-art { height: 230px; }
+  .demo-art__halo { width: 155px; height: 155px; }
+  .product-dropper { width: 57px; height: 136px; }
+  .product-cup { width: 92px; height: 112px; }
+  .product-card { width: 105px; height: 143px; }
+  .process-list { margin-top: 50px; }
+  .process-item { grid-template-columns: 48px 1fr; }
+  .process-item__tag { grid-column: 2; justify-self: start; }
+  .pricing__copy { display: block; }
+  .guarantee-stamp { margin-top: 35px; }
+  .price-card { padding: 22px; box-shadow: 9px 10px 0 var(--ink); }
+  .price-card__price strong { font-size: 80px; }
+  .guarantee__inner { grid-template-columns: 1fr; }
+  .guarantee__label { min-height: auto; padding: 14px; border-right: 0; border-bottom: 1px solid var(--ink); writing-mode: horizontal-tb; transform: none; }
+  .guarantee__terms { grid-column: 1; }
+  .faq-list summary { min-height: 78px; font-size: 17px; }
+  .final-cta h2 { font-size: clamp(53px,15vw,77px); }
+  .final-cta p { font-size: 16px; }
+  .site-footer__top { grid-template-columns: 1fr; gap: 32px; }
+  .footer-contact { justify-self: start; }
+  .footer-contact span, .footer-contact strong { text-align: left; }
+  .site-footer__bottom { flex-direction: column; gap: 8px; }
+  .sticky-mobile-cta { position: fixed; z-index: 80; left: 10px; right: 10px; bottom: 9px; min-height: 66px; padding: 8px 8px 8px 14px; display: flex; align-items: center; justify-content: space-between; gap: 10px; border: 1px solid var(--ink); border-radius: 17px; background: var(--paper-2); box-shadow: 6px 7px 0 var(--ink); transform: translateY(120px); transition: transform .3s ease; }
+  .sticky-mobile-cta.is-visible { transform: translateY(0); }
+  .sticky-mobile-cta small, .sticky-mobile-cta strong { display: block; line-height: 1.2; }
+  .sticky-mobile-cta small { font-size: 9px; color: var(--muted); }
+  .sticky-mobile-cta strong { margin-top: 3px; font-size: 13px; }
+}
+
+@media (max-width: 390px) {
+  .browser-card { width: 94%; }
+  .floating-note--top { right: -4px; }
+  .floating-note--bottom { left: -5px; }
+  .demo-canvas__nav span { display: none; }
+  .demo-canvas__content { grid-template-columns: 1.1fr .9fr; }
+  .demo-canvas__copy h4 { font-size: 21px; }
+  .demo-canvas__copy p { font-size: 8px; }
+  .demo-canvas__footer { gap: 5px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .reveal { opacity: 1; transform: none; }
+}
+
+</style>
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:title" content="LajuPage — Landing Page Custom Selesai 48 Jam">
+  <meta property="og:description" content="Bukan template. Kami gali angle, tulis copy, desain, dan terbitkan landing page Anda mulai Rp299.000.">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:url" content="https://contoh-domain-anda.com/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>LajuPage — Landing Page Custom Selesai 48 Jam</title>
+
+  <script>
+/**
+ * Konfigurasi cepat sebelum dipublikasikan.
+ * Nomor WhatsApp wajib format internasional, digit saja, tanpa tanda +.
+ * Contoh Indonesia: 6281234567890
+ */
+window.LAJUPAGE_CONFIG = {
+  whatsappNumber: "",
+  whatsappDisplay: "",
+  whatsappMessage: "Halo LajuPage, saya tertarik membuat landing page Rp299.000. Bisa bantu jelaskan prosesnya?",
+  ga4Id: "",
+  metaPixelId: ""
+};
+
+</script>
+  <script>
+    (function () {
+      const config = window.LAJUPAGE_CONFIG || {};
+      const ga4Id = String(config.ga4Id || '').trim();
+      if (/^G-[A-Z0-9]+$/i.test(ga4Id)) {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(ga4Id)}`;
+        document.head.appendChild(script);
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { window.dataLayer.push(arguments); };
+        window.gtag('js', new Date());
+        window.gtag('config', ga4Id);
+      }
+
+      const pixelId = String(config.metaPixelId || '').trim();
+      if (/^\d{5,20}$/.test(pixelId)) {
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+        (window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        window.fbq('init', pixelId);
+        window.fbq('track', 'PageView');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>Custom, bukan template</span><i></i><span>Selesai maksimal 48 jam</span><i></i><span>Tanpa biaya hosting bulanan</span><i></i><span>CTA langsung ke WhatsApp</span><i></i>
+      <span>Custom, bukan template</span><i></i><span>Selesai maksimal 48 jam</span><i></i><span>Tanpa biaya hosting bulanan</span><i></i><span>CTA langsung ke WhatsApp</span><i></i>
+    </div>
+  </div>
+
+  <header class="site-header" data-header>
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="LajuPage, kembali ke atas">
+        <svg class="brand__mark" viewBox="0 0 44 44" role="img" aria-label="Logo LajuPage">
+          <rect width="44" height="44" rx="13" fill="currentColor"/>
+          <path d="M13 12h7v13.8c0 2.8 1.5 4.2 4.4 4.2H32v7h-8.8C16.4 37 13 33.7 13 27.1V12Z" fill="#141414"/>
+          <path d="M25 12h7v13h-7z" fill="#141414"/>
+        </svg>
+        <span>LajuPage</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+        <span class="sr-only">Buka menu</span>
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navigasi utama" data-menu>
+        <a href="#hasil">Hasil</a>
+        <a href="#proses">Proses</a>
+        <a href="#paket">Paket</a>
+        <a href="#faq">FAQ</a>
+        <a class="button button--small button--dark" href="#kontak" data-cta="whatsapp" data-cta-location="header">
+          Konsultasi gratis
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M8 5h7v7"/></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="shell hero__grid">
+        <div class="hero__copy reveal">
+          <div class="eyebrow"><span></span> Landing page untuk bisnis yang mau bergerak cepat</div>
+          <h1>Produk Anda layak punya halaman yang <em>meyakinkan.</em></h1>
+          <p class="hero__lead">Cukup ngobrol dengan CS dan kirim aset. Kami gali angle, menulis copy, merancang visual custom, lalu menerbitkan landing page siap dipakai—maksimal 48 jam.</p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="#kontak" data-cta="whatsapp" data-cta-location="hero">
+              Mulai dari Rp299.000
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M8 5h7v7"/></svg>
+            </a>
+            <a class="text-link" href="#hasil">Lihat kualitas halaman <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <ul class="hero__facts" aria-label="Ringkasan layanan">
+            <li><strong>48 jam</strong><span>garansi selesai</span></li>
+            <li><strong>Custom</strong><span>bukan template</span></li>
+            <li><strong>Rp0</strong><span>hosting bulanan</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal" data-delay="1" aria-label="Contoh tampilan landing page produk">
+          <div class="orbit orbit--one"></div>
+          <div class="orbit orbit--two"></div>
+
+          <div class="browser-card" data-tilt-card>
+            <div class="browser-card__bar">
+              <div class="browser-dots"><i></i><i></i><i></i></div>
+              <div class="browser-url">kopisore.lajupage.site</div>
+              <span class="browser-lock" aria-hidden="true">●</span>
+            </div>
+            <div class="mock-page mock-page--coffee">
+              <div class="mock-nav">
+                <b>KOPI/SORE</b>
+                <span>Menu</span>
+              </div>
+              <div class="mock-hero">
+                <div class="mock-copy">
+                  <small>COLD BREW CONCENTRATE</small>
+                  <h2>Kopi enak. Tanpa antre, tanpa ribet.</h2>
+                  <p>Rasa bold yang siap dalam 30 detik—tinggal tuang, tambah air atau susu.</p>
+                  <button type="button" tabindex="-1">Pesan satu botol →</button>
+                </div>
+                <div class="bottle-scene" aria-hidden="true">
+                  <div class="sun-disc"></div>
+                  <div class="bean bean--1"></div><div class="bean bean--2"></div><div class="bean bean--3"></div>
+                  <div class="bottle">
+                    <div class="bottle__cap"></div>
+                    <div class="bottle__neck"></div>
+                    <div class="bottle__body"><span>KOPI<br>SORE</span><small>cold brew</small></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mock-proof">
+                <span><b>10×</b> sajian</span><span><b>30</b> detik</span><span><b>0</b> alat seduh</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-note floating-note--top">
+            <span class="note-icon">↗</span>
+            <div><small>Tujuan jelas</small><strong>Pesan via WhatsApp</strong></div>
+          </div>
+          <div class="floating-note floating-note--bottom">
+            <span class="pulse-dot"></span>
+            <div><small>Siap menerima traffic</small><strong>Mobile-first & cepat</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shell hero__footnote reveal">
+        <span>Halaman yang sedang Anda lihat juga dibuat sebagai contoh kualitas layanan kami.</span>
+        <svg viewBox="0 0 70 20" aria-hidden="true"><path d="M1 10h65m-9-8 9 8-9 8"/></svg>
+      </div>
+    </section>
+
+    <section class="problem section-pad" aria-labelledby="problem-title">
+      <div class="shell">
+        <div class="section-intro reveal">
+          <div class="kicker">Masalah yang sering terjadi</div>
+          <h2 id="problem-title">Calon pembeli tertarik, tapi halaman Anda membuat mereka harus <em>menebak.</em></h2>
+        </div>
+
+        <div class="problem-grid">
+          <article class="problem-card reveal">
+            <span class="problem-card__number">01</span>
+            <div class="problem-card__shape shape-a" aria-hidden="true"></div>
+            <h3>Pesannya tidak langsung nyambung</h3>
+            <p>Pengunjung belum paham produk ini untuk siapa, masalah apa yang diselesaikan, dan kenapa harus memilih Anda.</p>
+          </article>
+          <article class="problem-card problem-card--dark reveal" data-delay="1">
+            <span class="problem-card__number">02</span>
+            <div class="problem-card__shape shape-b" aria-hidden="true"></div>
+            <h3>Desain terlihat generik</h3>
+            <p>Tampilan mungkin rapi, tetapi tidak punya karakter produk dan terasa sama seperti ratusan website lain.</p>
+          </article>
+          <article class="problem-card problem-card--accent reveal" data-delay="2">
+            <span class="problem-card__number">03</span>
+            <div class="problem-card__shape shape-c" aria-hidden="true"></div>
+            <h3>CTA tidak membimbing</h3>
+            <p>Orang sudah membaca, tetapi tidak tahu langkah selanjutnya atau pesan apa yang harus dikirim ke CS.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="outcome section-pad" id="hasil" aria-labelledby="outcome-title">
+      <div class="shell outcome__grid">
+        <div class="outcome__sticky reveal">
+          <div class="kicker">Yang kami bangun</div>
+          <h2 id="outcome-title">Bukan website untuk dipajang. <em>Halaman untuk membantu orang mengambil keputusan.</em></h2>
+          <p>Setiap bagian memiliki tugas: menarik perhatian, menjelaskan manfaat, membangun kepercayaan, menjawab keberatan, dan mengantar ke WhatsApp.</p>
+          <a class="button button--dark" href="#kontak" data-cta="whatsapp" data-cta-location="outcome">
+            Bahas produk saya
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M8 5h7v7"/></svg>
+          </a>
+        </div>
+
+        <div class="deliverables">
+          <article class="deliverable reveal">
+            <div class="deliverable__icon icon-target" aria-hidden="true"><i></i></div>
+            <div><span>01</span><h3>Angle & hook yang spesifik</h3><p>Kami melihat produk, target pembeli, kompetitor, dan keberatan pasar sebelum menentukan pesan utama.</p></div>
+          </article>
+          <article class="deliverable reveal">
+            <div class="deliverable__icon icon-type" aria-hidden="true">Aa</div>
+            <div><span>02</span><h3>Copy yang mudah dipahami</h3><p>Tidak dipenuhi jargon. Pengunjung cepat menangkap manfaat, alasan percaya, dan tindakan berikutnya.</p></div>
+          </article>
+          <article class="deliverable reveal">
+            <div class="deliverable__icon icon-layout" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div><span>03</span><h3>Desain custom sesuai produk</h3><p>Komposisi, warna, tipografi, dan ritme halaman dirancang dari konteks—bukan mengganti isi template pasaran.</p></div>
+          </article>
+          <article class="deliverable reveal">
+            <div class="deliverable__icon icon-phone" aria-hidden="true"><i></i></div>
+            <div><span>04</span><h3>CTA WhatsApp yang siap dipakai</h3><p>Tombol konsisten, nomor terpusat, pesan otomatis sudah terisi, dan klik dapat dilacak bila pixel tersedia.</p></div>
+          </article>
+          <article class="deliverable reveal">
+            <div class="deliverable__icon icon-speed" aria-hidden="true"><i></i></div>
+            <div><span>05</span><h3>Ringan dan mobile-first</h3><p>Dibangun sebagai halaman statis agar cepat, stabil, dan nyaman dibuka dari iklan di perangkat seluler.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase section-pad" aria-labelledby="showcase-title">
+      <div class="shell">
+        <div class="showcase__head reveal">
+          <div>
+            <div class="kicker">Satu sistem, karakter berbeda</div>
+            <h2 id="showcase-title">Kami menyesuaikan bahasa visual dengan <em>kategori bisnisnya.</em></h2>
+          </div>
+          <p>Tekan kategori untuk melihat bagaimana satu pesan dapat diterjemahkan menjadi tampilan yang berbeda. Seluruh contoh di bawah adalah konsep demonstrasi.</p>
+        </div>
+
+        <div class="showcase__controls reveal" role="tablist" aria-label="Pilih contoh kategori">
+          <button class="showcase-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="demo-panel" data-demo="beauty">Beauty</button>
+          <button class="showcase-tab" type="button" role="tab" aria-selected="false" aria-controls="demo-panel" data-demo="food">F&amp;B</button>
+          <button class="showcase-tab" type="button" role="tab" aria-selected="false" aria-controls="demo-panel" data-demo="service">Jasa</button>
+        </div>
+
+        <div class="demo-stage reveal" id="demo-panel" role="tabpanel" tabindex="0" data-demo-stage data-theme="beauty">
+          <div class="demo-stage__meta">
+            <span data-demo-category>SKINCARE LOKAL</span>
+            <h3 data-demo-title>Barrier care untuk kulit yang ingin istirahat.</h3>
+            <p data-demo-desc>Editorial, tenang, dan fokus pada tekstur produk untuk membangun rasa aman.</p>
+            <ul>
+              <li><span>Angle</span><b data-demo-angle>Simple recovery routine</b></li>
+              <li><span>CTA</span><b data-demo-cta>Konsultasi produk</b></li>
+              <li><span>Gaya</span><b data-demo-style>Soft editorial</b></li>
+            </ul>
+          </div>
+
+          <div class="demo-browser">
+            <div class="demo-browser__chrome"><i></i><i></i><i></i><span data-demo-url>nara-skin.lajupage.site</span></div>
+            <div class="demo-canvas">
+              <div class="demo-canvas__nav"><b data-demo-logo>NARA.</b><span>Shop&nbsp;&nbsp; Journal&nbsp;&nbsp; About</span></div>
+              <div class="demo-canvas__content">
+                <div class="demo-canvas__copy">
+                  <small data-demo-eyebrow>BARRIER RESET SERUM</small>
+                  <h4 data-demo-heading>Kulit tenang dimulai dari rutinitas yang sederhana.</h4>
+                  <p data-demo-body>Formula ringan untuk menemani kulit yang terasa kering, kusam, dan mudah tidak nyaman.</p>
+                  <button type="button" tabindex="-1" data-demo-button>Temukan rutinitasmu</button>
+                </div>
+                <div class="demo-art" aria-hidden="true">
+                  <div class="demo-art__halo"></div>
+                  <div class="demo-product product-dropper" data-demo-product><i></i>NARA</div>
+                  <div class="demo-art__line"></div>
+                </div>
+              </div>
+              <div class="demo-canvas__footer"><span>01 / Calm</span><span>02 / Repair</span><span>03 / Protect</span></div>
+            </div>
+          </div>
+        </div>
+
+        <p class="demo-disclaimer reveal">*Brand, copy, dan produk pada area demonstrasi bersifat fiktif dan dibuat khusus sebagai contoh pendekatan desain.</p>
+      </div>
+    </section>
+
+    <section class="process section-pad" id="proses" aria-labelledby="process-title">
+      <div class="shell">
+        <div class="process__intro reveal">
+          <div class="kicker">Dari chat sampai online</div>
+          <h2 id="process-title">Anda cukup cerita. <em>Kami yang merapikan semuanya.</em></h2>
+          <p>Timer 48 jam dimulai setelah brief, aset wajib, pembayaran, dan persetujuan scope dinyatakan lengkap.</p>
+        </div>
+
+        <ol class="process-list">
+          <li class="process-item reveal">
+            <span class="process-item__num">01</span>
+            <div class="process-item__body"><h3>Ngobrol dengan CS</h3><p>Kami menggali produk, target, harga, keunggulan, keberatan pembeli, tujuan, dan aset yang tersedia.</p></div>
+            <span class="process-item__tag">15–30 menit</span>
+          </li>
+          <li class="process-item reveal">
+            <span class="process-item__num">02</span>
+            <div class="process-item__body"><h3>Riset & tentukan angle</h3><p>Kami memetakan pola kompetitor dan mencari pesan yang paling relevan untuk membedakan penawaran Anda.</p></div>
+            <span class="process-item__tag">Strategi</span>
+          </li>
+          <li class="process-item reveal">
+            <span class="process-item__num">03</span>
+            <div class="process-item__body"><h3>Copy, desain, dan coding</h3><p>AI mempercepat produksi, sementara struktur, klaim, tampilan, dan kualitas akhir tetap melalui review manusia.</p></div>
+            <span class="process-item__tag">Custom build</span>
+          </li>
+          <li class="process-item reveal">
+            <span class="process-item__num">04</span>
+            <div class="process-item__body"><h3>QA lalu terbitkan</h3><p>Kami memeriksa mobile, tautan, CTA WhatsApp, aset, metadata, dan tampilan sebelum halaman dinyatakan selesai.</p></div>
+            <span class="process-item__tag">Maks. 48 jam</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="pricing section-pad" id="paket" aria-labelledby="pricing-title">
+      <div class="shell pricing__grid">
+        <div class="pricing__copy reveal">
+          <div class="kicker">Paket yang mudah diputuskan</div>
+          <h2 id="pricing-title">Satu harga. Scope jelas. <em>Tidak ada biaya hosting bulanan.</em></h2>
+          <p>Dirancang untuk satu produk atau satu penawaran yang membutuhkan halaman profesional tanpa proses proyek web yang panjang.</p>
+
+          <div class="guarantee-stamp" aria-label="Garansi 48 jam atau gratis">
+            <svg viewBox="0 0 180 180" aria-hidden="true">
+              <defs><path id="circlePath" d="M90,90 m-68,0 a68,68 0 1,1 136,0 a68,68 0 1,1 -136,0"/></defs>
+              <text><textPath href="#circlePath">SELESAI 48 JAM • ATAU BIAYA PEMBUATAN GRATIS • </textPath></text>
+            </svg>
+            <div><strong>48</strong><span>JAM</span></div>
+          </div>
+        </div>
+
+        <article class="price-card reveal" data-delay="1">
+          <div class="price-card__top">
+            <span>LANDING PAGE CUSTOM</span>
+            <span>01 HALAMAN</span>
+          </div>
+          <div class="price-card__price"><sup>Rp</sup><strong>299</strong><span>.000</span></div>
+          <p class="price-card__caption">Sekali bayar untuk produksi landing page sesuai scope.</p>
+
+          <ul class="scope-list">
+            <li><span>✓</span> Satu produk / satu penawaran utama</li>
+            <li><span>✓</span> Maksimal 10 section</li>
+            <li><span>✓</span> Riset kompetitor ringan & penentuan angle</li>
+            <li><span>✓</span> Copywriting berdasarkan brief</li>
+            <li><span>✓</span> Desain custom berbantuan AI</li>
+            <li><span>✓</span> Responsive desktop dan mobile</li>
+            <li><span>✓</span> CTA WhatsApp dengan pesan otomatis</li>
+            <li><span>✓</span> Subdomain dan hosting tanpa biaya bulanan</li>
+            <li><span>✓</span> Satu putaran revisi minor</li>
+          </ul>
+
+          <a class="button button--primary button--full" href="#kontak" data-cta="whatsapp" data-cta-location="pricing">
+            Cek slot pengerjaan
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M8 5h7v7"/></svg>
+          </a>
+          <small>Custom domain, pembelian domain, dan integrasi khusus dihitung terpisah.</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="guarantee section-pad" aria-labelledby="guarantee-title">
+      <div class="shell guarantee__inner reveal">
+        <div class="guarantee__label">GARANSI YANG TIDAK ABU-ABU</div>
+        <div class="guarantee__copy">
+          <h2 id="guarantee-title">Lewat 48 jam? <em>Biaya pembuatannya gratis.</em></h2>
+          <p>Bila versi pertama belum online dan lolos pemeriksaan internal dalam 48 jam setelah brief dinyatakan lengkap, biaya pembuatan dikembalikan dan halaman yang sudah dibuat tetap boleh Anda gunakan.</p>
+        </div>
+        <div class="guarantee__terms">
+          <span>Timer dimulai setelah:</span>
+          <ul>
+            <li>Pembayaran diterima</li>
+            <li>Brief & aset wajib lengkap</li>
+            <li>Scope dan klaim disetujui</li>
+            <li>Nomor WhatsApp terverifikasi</li>
+          </ul>
+          <small>Waktu approval, revisi, custom domain, dan propagasi DNS tidak dihitung dalam SLA versi pertama.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section-pad" id="faq" aria-labelledby="faq-title">
+      <div class="shell faq__grid">
+        <div class="faq__intro reveal">
+          <div class="kicker">Pertanyaan yang wajar ditanyakan</div>
+          <h2 id="faq-title">Sebelum Anda bilang, <em>“oke, gas.”</em></h2>
+        </div>
+
+        <div class="faq-list reveal">
+          <details>
+            <summary>Apakah desainnya memakai template yang sama?<span></span></summary>
+            <p>Tidak. Yang kami standarkan adalah proses brief, riset, quality control, dan deployment. Komposisi halaman, gaya visual, copy, dan urutan section dibuat berdasarkan konteks produk Anda.</p>
+          </details>
+          <details>
+            <summary>Saya belum punya copywriting. Bisa dibantu?<span></span></summary>
+            <p>Bisa. CS akan menggali informasi dari Anda, kemudian tim menyusun hook, struktur pesan, dan copy berdasarkan fakta yang telah disetujui. Kami tidak mengarang testimonial atau klaim.</p>
+          </details>
+          <details>
+            <summary>Apakah benar tidak ada biaya hosting?<span></span></summary>
+            <p>Untuk landing page statis yang memakai subdomain dan infrastruktur kami, tidak ada biaya hosting bulanan. Domain sendiri dapat digunakan dan biaya pembelian atau perpanjangannya terpisah.</p>
+          </details>
+          <details>
+            <summary>Apa yang termasuk revisi minor?<span></span></summary>
+            <p>Perubahan teks, harga, gambar, warna, urutan kecil, dan penyesuaian CTA yang tidak mengubah brief atau struktur utama. Pembuatan konsep ulang dan perubahan scope dihitung terpisah.</p>
+          </details>
+          <details>
+            <summary>Apakah bisa dipakai untuk iklan Meta atau TikTok?<span></span></summary>
+            <p>Bisa. Halaman dibuat mobile-first dan dapat dipasang GA4, Meta Pixel, atau TikTok Pixel bila ID serta kebutuhannya diberikan sejak brief.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="kontak" aria-labelledby="contact-title">
+      <div class="final-cta__noise" aria-hidden="true"></div>
+      <div class="shell final-cta__inner reveal">
+        <div class="final-cta__eyebrow">PUNYA PRODUK YANG SIAP DIPASARKAN?</div>
+        <h2 id="contact-title">Kirim ceritanya.<br><em>Kami jadikan halaman.</em></h2>
+        <p>Mulai dengan konsultasi singkat melalui WhatsApp. Tidak perlu menyiapkan dokumen rumit—cukup ceritakan produk dan kirim aset yang Anda punya.</p>
+        <a class="button button--light button--large" href="#" data-cta="whatsapp" data-cta-location="final">
+          Ngobrol dengan CS sekarang
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M8 5h7v7"/></svg>
+        </a>
+        <div class="final-cta__meta">
+          <span>Mulai Rp299.000</span><i></i><span>Selesai maksimal 48 jam</span><i></i><span>Tanpa biaya hosting bulanan</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell site-footer__top">
+      <a class="brand brand--footer" href="#top">
+        <svg class="brand__mark" viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="13" fill="currentColor"/><path d="M13 12h7v13.8c0 2.8 1.5 4.2 4.4 4.2H32v7h-8.8C16.4 37 13 33.7 13 27.1V12Z" fill="#f4f0e7"/><path d="M25 12h7v13h-7z" fill="#f4f0e7"/></svg>
+        <span>LajuPage</span>
+      </a>
+      <p>Landing page custom untuk bisnis yang ingin bergerak cepat dan terlihat meyakinkan.</p>
+      <a class="footer-contact" href="#" data-cta="whatsapp" data-cta-location="footer"><span>WhatsApp CS</span><strong data-whatsapp-display>Atur nomor di config.js</strong></a>
+    </div>
+    <div class="shell site-footer__bottom">
+      <span>© <span data-current-year></span> LajuPage. Seluruh hak dilindungi.</span>
+      <span>Demo portfolio • Dibangun dengan HTML, CSS, dan JavaScript native.</span>
+    </div>
+  </footer>
+
+  <div class="sticky-mobile-cta" data-sticky-cta>
+    <div><small>Landing page custom</small><strong>Mulai Rp299.000</strong></div>
+    <a class="button button--primary button--small" href="#" data-cta="whatsapp" data-cta-location="sticky">Chat CS</a>
+  </div>
+
+  <dialog class="setup-dialog" data-setup-dialog aria-labelledby="setup-title">
+    <button class="dialog-close" type="button" data-dialog-close aria-label="Tutup">×</button>
+    <span class="dialog-icon" aria-hidden="true">↗</span>
+    <h2 id="setup-title">Nomor WhatsApp belum diatur</h2>
+    <p>Ini adalah mode demo. Sebelum halaman dipublikasikan, isi nomor WhatsApp CS pada file <code>config.js</code>.</p>
+    <button class="button button--dark button--full" type="button" data-dialog-close>Saya mengerti</button>
+  </dialog>
+
+  <noscript>
+    <div class="noscript">Aktifkan JavaScript agar tombol WhatsApp dan interaksi halaman bekerja sepenuhnya.</div>
+  </noscript>
+
+  <script>
+(() => {
+  'use strict';
+
+  const config = window.LAJUPAGE_CONFIG || {};
+  const digitsOnly = String(config.whatsappNumber || '').replace(/\D/g, '');
+  const hasValidWhatsApp = /^\d{8,15}$/.test(digitsOnly);
+  const message = String(config.whatsappMessage || 'Halo, saya tertarik membuat landing page.').trim();
+  const whatsappUrl = hasValidWhatsApp
+    ? `https://wa.me/${digitsOnly}?text=${encodeURIComponent(message)}`
+    : '#';
+
+  const setupDialog = document.querySelector('[data-setup-dialog]');
+
+  function trackWhatsAppClick(location, href) {
+    try {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'whatsapp_click', {
+          cta_location: location,
+          offer_name: 'Landing Page Custom Rp299.000',
+          page_slug: 'lajupage-portfolio',
+          link_url: href
+        });
+      }
+    } catch (error) {
+      console.warn('GA4 tracking gagal:', error);
+    }
+
+    try {
+      if (typeof window.fbq === 'function') {
+        window.fbq('track', 'Contact', {
+          content_name: 'Landing Page Custom Rp299.000',
+          cta_location: location
+        });
+      }
+    } catch (error) {
+      console.warn('Meta Pixel tracking gagal:', error);
+    }
+  }
+
+  document.querySelectorAll('[data-cta="whatsapp"]').forEach((link) => {
+    link.setAttribute('href', whatsappUrl);
+    if (hasValidWhatsApp) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+
+    link.addEventListener('click', (event) => {
+      if (!hasValidWhatsApp) {
+        event.preventDefault();
+        if (setupDialog && typeof setupDialog.showModal === 'function') {
+          setupDialog.showModal();
+        }
+        return;
+      }
+      trackWhatsAppClick(link.dataset.ctaLocation || 'unknown', whatsappUrl);
+    });
+  });
+
+  document.querySelectorAll('[data-whatsapp-display]').forEach((element) => {
+    element.textContent = config.whatsappDisplay || (hasValidWhatsApp ? `+${digitsOnly}` : 'Atur nomor di config.js');
+  });
+
+  document.querySelectorAll('[data-dialog-close]').forEach((button) => {
+    button.addEventListener('click', () => setupDialog?.close());
+  });
+
+  setupDialog?.addEventListener('click', (event) => {
+    const rect = setupDialog.getBoundingClientRect();
+    const clickedOutside = event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
+    if (clickedOutside) setupDialog.close();
+  });
+
+  const menuButton = document.querySelector('[data-menu-toggle]');
+  const menu = document.querySelector('[data-menu]');
+  const closeMenu = () => {
+    menuButton?.setAttribute('aria-expanded', 'false');
+    menu?.classList.remove('is-open');
+    document.body.classList.remove('menu-open');
+  };
+
+  menuButton?.addEventListener('click', () => {
+    const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', String(!isOpen));
+    menu?.classList.toggle('is-open', !isOpen);
+    document.body.classList.toggle('menu-open', !isOpen);
+  });
+  menu?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+  window.addEventListener('resize', () => { if (window.innerWidth > 760) closeMenu(); });
+
+  const header = document.querySelector('[data-header]');
+  const stickyCta = document.querySelector('[data-sticky-cta]');
+  const updateScrollState = () => {
+    header?.classList.toggle('is-scrolled', window.scrollY > 20);
+    stickyCta?.classList.toggle('is-visible', window.scrollY > 620 && window.scrollY < document.documentElement.scrollHeight - window.innerHeight - 550);
+  };
+  updateScrollState();
+  window.addEventListener('scroll', updateScrollState, { passive: true });
+
+  const revealElements = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px' });
+    revealElements.forEach((element) => observer.observe(element));
+  } else {
+    revealElements.forEach((element) => element.classList.add('is-visible'));
+  }
+
+  const tiltCard = document.querySelector('[data-tilt-card]');
+  if (tiltCard && window.matchMedia('(pointer: fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    tiltCard.addEventListener('pointermove', (event) => {
+      const rect = tiltCard.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width - 0.5;
+      const y = (event.clientY - rect.top) / rect.height - 0.5;
+      tiltCard.style.transform = `rotateY(${x * 5}deg) rotateX(${y * -5}deg) rotate(1.6deg)`;
+    });
+    tiltCard.addEventListener('pointerleave', () => {
+      tiltCard.style.transform = 'rotateY(0) rotateX(0) rotate(1.6deg)';
+    });
+  }
+
+  const demoData = {
+    beauty: {
+      category: 'SKINCARE LOKAL', title: 'Barrier care untuk kulit yang ingin istirahat.',
+      desc: 'Editorial, tenang, dan fokus pada tekstur produk untuk membangun rasa aman.',
+      angle: 'Simple recovery routine', cta: 'Konsultasi produk', style: 'Soft editorial',
+      url: 'nara-skin.lajupage.site', logo: 'NARA.', eyebrow: 'BARRIER RESET SERUM',
+      heading: 'Kulit tenang dimulai dari rutinitas yang sederhana.',
+      body: 'Formula ringan untuk menemani kulit yang terasa kering, kusam, dan mudah tidak nyaman.',
+      button: 'Temukan rutinitasmu', product: 'NARA', productClass: 'product-dropper'
+    },
+    food: {
+      category: 'F&B / MINUMAN', title: 'Rasa khas yang terlihat berani sejak layar pertama.',
+      desc: 'Warna segar, tipografi padat, dan visual produk yang terasa dekat dengan keseharian.',
+      angle: 'Daily energy, no ceremony', cta: 'Pesan menu favorit', style: 'Bold & playful',
+      url: 'tumbuh-coffee.lajupage.site', logo: 'TUMBUH!', eyebrow: 'KOPI SUSU BOTOLAN',
+      heading: 'Kopi enak yang tidak minta hari Anda berhenti.',
+      body: 'Racikan creamy dengan rasa kopi yang tetap terasa—siap ikut ke meja kerja atau perjalanan.',
+      button: 'Lihat varian rasa', product: 'TUMBUH!', productClass: 'product-cup'
+    },
+    service: {
+      category: 'JASA PROFESIONAL', title: 'Kompetensi terasa jelas tanpa harus terlihat kaku.',
+      desc: 'Struktur tegas, kontras tinggi, dan hierarchy yang membantu calon klien memahami proses.',
+      angle: 'Clarity before commitment', cta: 'Jadwalkan konsultasi', style: 'Confident editorial',
+      url: 'ruanglegal.lajupage.site', logo: 'RUANG/LEGAL', eyebrow: 'KONSULTASI LEGAL BISNIS',
+      heading: 'Keputusan bisnis lebih tenang ketika risikonya terbaca.',
+      body: 'Pendampingan legal praktis untuk pemilik usaha yang membutuhkan jawaban jelas dan langkah terukur.',
+      button: 'Ceritakan kebutuhan Anda', product: 'RUANG\nLEGAL', productClass: 'product-card'
+    }
+  };
+
+  const stage = document.querySelector('[data-demo-stage]');
+  const tabs = document.querySelectorAll('[data-demo]');
+  const fields = {
+    category: '[data-demo-category]', title: '[data-demo-title]', desc: '[data-demo-desc]',
+    angle: '[data-demo-angle]', cta: '[data-demo-cta]', style: '[data-demo-style]',
+    url: '[data-demo-url]', logo: '[data-demo-logo]', eyebrow: '[data-demo-eyebrow]',
+    heading: '[data-demo-heading]', body: '[data-demo-body]', button: '[data-demo-button]', product: '[data-demo-product]'
+  };
+
+  function setDemo(key) {
+    const data = demoData[key];
+    if (!stage || !data) return;
+    stage.dataset.theme = key;
+    Object.entries(fields).forEach(([name, selector]) => {
+      const element = stage.querySelector(selector);
+      if (element) element.textContent = data[name];
+    });
+    const product = stage.querySelector('[data-demo-product]');
+    if (product) {
+      product.className = `demo-product ${data.productClass}`;
+      if (data.productClass === 'product-dropper') {
+        const cap = document.createElement('i');
+        product.prepend(cap);
+      }
+    }
+    tabs.forEach((tab) => {
+      const active = tab.dataset.demo === key;
+      tab.classList.toggle('is-active', active);
+      tab.setAttribute('aria-selected', String(active));
+    });
+  }
+  tabs.forEach((tab) => tab.addEventListener('click', () => setDemo(tab.dataset.demo)));
+
+  document.querySelectorAll('[data-current-year]').forEach((element) => {
+    element.textContent = String(new Date().getFullYear());
+  });
+})();
+
+</script>
+</body>
+</html>

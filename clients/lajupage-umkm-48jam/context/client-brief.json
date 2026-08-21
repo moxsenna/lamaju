@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "project_id": "e89e7a7e-90c6-43da-ad64-ad2fc767a565",
+    "client_name": "Lamaju",
+    "brand_name": "Lamaju",
+    "page_slug": "lajupage-umkm-48jam",
+    "status": "INTAKE",
+    "timezone": "Asia/Jakarta",
+    "ready_for_production_at": "",
+    "sla_deadline_at": "",
+    "owner": ""
+  },
+  "scope": {
+    "package": "LP_48H_299K",
+    "language": "id-ID",
+    "max_sections": 10,
+    "primary_conversion": "WHATSAPP",
+    "revision_rounds": 1,
+    "revision_item_limit": 10,
+    "included_tracking": ["GA4_IF_ID_PROVIDED", "META_PIXEL_IF_ID_PROVIDED"],
+    "excluded": ["dashboard", "login", "database", "checkout", "custom_backend", "complex_integrations", "multi_product_catalog"]
+  },
+  "offer": {
+    "offer_name": "Paket Landing Page UMKM 48 Jam",
+    "category": "Jasa pembuatan landing page untuk UMKM",
+    "description": "Landing page custom untuk satu produk atau penawaran utama UMKM, mulai Rp299.000 dan versi pertama online maksimal 48 jam setelah brief lengkap.",
+    "primary_goal": "Mengajak pemilik UMKM berkonsultasi melalui WhatsApp.",
+    "price": { "currency": "IDR", "normal": 299000, "promo": null, "display_text": "Mulai Rp299.000 sekali bayar" },
+    "promotion": { "headline": "", "bonus": [], "deadline": "", "conditions": "" },
+    "service_area": "",
+    "fulfillment": "Versi pertama diterbitkan pada subdomain layanan setelah brief dikunci dan QA internal selesai.",
+    "terms": ["Satu produk atau satu penawaran utama", "Maksimal 10 section", "Satu putaran revisi minor", "Custom domain dan integrasi khusus dihitung terpisah"]
+  },
+  "audience": {
+    "primary_audience": "Pemilik UMKM yang ingin segera mempromosikan satu produk, jasa, event, atau penawaran utama.",
+    "secondary_audience": "",
+    "pain_points": ["Promosi tertunda karena halaman jualan belum siap", "Informasi produk harus dijelaskan ulang melalui chat", "Traffic iklan masuk ke WhatsApp tanpa informasi yang cukup"],
+    "desired_outcomes": ["Memiliki satu halaman jualan yang siap dipakai promosi", "Calon pembeli memahami produk sebelum menghubungi WhatsApp", "Proses pembuatan yang cepat dan sederhana"],
+    "trigger_moments": ["Sudah memiliki foto produk dan daftar harga", "Ingin segera menjalankan promosi"],
+    "objections": ["Tidak mengerti website", "Hanya memiliki foto produk dan daftar harga", "Khawatir proses pembuatan terlalu lama"],
+    "current_alternatives": [],
+    "not_for": [],
+    "traffic_sources": ["Instagram", "Facebook", "TikTok", "Status WhatsApp", "QR code", "Bio media sosial"]
+  },
+  "product": {
+    "mechanism": "Pemilik usaha mengirim informasi melalui WhatsApp; tim merapikan brief, riset cepat, menyusun copy dan desain custom, membangun, menguji, lalu menerbitkan halaman.",
+    "features": ["Riset cepat kompetitor dan penentuan angle", "Copywriting berdasarkan brief", "Desain custom", "Responsive desktop dan mobile", "CTA WhatsApp dengan pesan otomatis", "Subdomain dan hosting tanpa biaya bulanan"],
+    "benefits": ["Pesan utama lebih cepat dipahami", "Calon pembeli diarahkan ke WhatsApp", "Pemilik usaha tidak perlu menulis copy atau menangani bagian teknis"],
+    "differentiators": ["Versi pertama online maksimal 48 jam setelah brief lengkap", "Proses cukup melalui chat dan pengiriman bahan", "Desain disesuaikan dengan kategori dan aset usaha"],
+    "limitations": ["Tidak mencakup dashboard, login, database, checkout, backend, integrasi kompleks, atau katalog multi-produk"],
+    "usage_steps": ["Chat CS dan ceritakan usaha", "Kirim foto, harga, dan informasi usaha", "Konfirmasi brief, scope, klaim, dan nomor WhatsApp", "Tinjau versi pertama yang diterbitkan"],
+    "faq": []
+  },
+  "proof": {
+    "testimonials": [],
+    "case_studies": [],
+    "credentials": [],
+    "customer_count": null,
+    "years_experience": null,
+    "risk_reversal": "Bila versi pertama belum online dan lolos QA internal dalam 48 jam sejak brief dikunci, biaya pembuatan dikembalikan dan halaman yang sudah dikerjakan tetap boleh digunakan.",
+    "evidence_files": []
+  },
+  "claims": {
+    "approved_claims": ["Mulai Rp299.000 sekali bayar", "Versi pertama online maksimal 48 jam setelah brief lengkap", "Tidak ada biaya hosting bulanan selama memakai subdomain dan infrastruktur layanan", "Satu putaran revisi minor"],
+    "needs_evidence": [],
+    "prohibited_claims": [],
+    "regulated_category_notes": ""
+  },
+  "brand": {
+    "logo_file": "",
+    "primary_color": "#c9ff4d",
+    "secondary_color": "#506dff",
+    "preferred_style": ["Editorial tegas", "Kontras kertas, hitam, lime, oranye, dan biru", "Mockup landing page berbasis CSS"],
+    "disliked_style": ["Template visual generik"],
+    "reference_sites": [],
+    "mandatory_words": ["Lamaju"],
+    "forbidden_words": []
+  },
+  "assets": {
+    "status": "AVAILABLE",
+    "files": ["src/assets/og-image.png"],
+    "usage_rights_confirmed": true,
+    "hero_asset": "",
+    "asset_limitations": "Showcase kategori memakai brand, copy, dan produk fiktif sebagai demonstrasi pendekatan desain."
+  },
+  "cta": {
+    "type": "WHATSAPP",
+    "whatsapp_number_local": "",
+    "whatsapp_number_e164": "6285117259331",
+    "display_number": "+62 851-1725-9331",
+    "prefilled_message": "Halo Lamaju, saya pemilik UMKM dan tertarik Paket Landing Page 48 Jam Rp299.000. Bisa cek apakah usaha saya cocok?", 
+    "primary_label": "Buat landing page 48 jam",
+    "secondary_labels": ["Konsultasi gratis", "Cek apakah usaha saya cocok", "Ceritakan usaha lewat WhatsApp sekarang"],
+    "fallback_text": "+62 851-1725-9331"
+  },
+  "tracking": {
+    "ga4_measurement_id": "",
+    "meta_pixel_id": "",
+    "google_tag_manager_id": "",
+    "additional_scripts": [],
+    "event_spec": {
+      "whatsapp_click": { "ga4_event": "whatsapp_click", "meta_event": "Contact", "parameters": ["cta_location", "offer_name", "page_slug", "link_url"] },
+      "form_success": { "enabled": false, "ga4_event": "generate_lead", "meta_event": "Lead" }
+    }
+  },
+  "domain": {
+    "mode": "PROVIDER_SUBDOMAIN",
+    "provider_subdomain": "lp-lajupage-umkm-48jam.pages.dev",
+    "custom_domain": "",
+    "dns_access_confirmed": false,
+    "custom_domain_is_sla_blocker": false
+  },
+  "footer": { "business_name": "Lamaju", "address": "", "email": "", "social_links": [], "privacy_url": "", "terms_url": "" },
+  "approval": { "brief_summary_sent_at": "", "brief_approved_at": "", "approved_by": "", "scope_approved": false, "claims_approved": false, "whatsapp_tested": false, "payment_received": false },
+  "internal": {
+    "research_notes": "",
+    "angle_primary": "Hari ini kirim bahan; maksimal 48 jam versi pertama landing page UMKM sudah online.",
+    "angle_supporting": ["Cukup chat, kirim foto, harga, dan informasi usaha", "Mulai Rp299.000 sekali bayar"],
+    "visual_concept": "Editorial cepat dan tegas dengan kontras kertas, tinta, lime, oranye, dan biru untuk menegaskan layanan produksi landing page UMKM yang praktis dan berkecepatan tinggi.",
+    "known_risks": ["Canonical perlu diganti bila custom domain digunakan."],
+    "assumptions": []
+  }
+}

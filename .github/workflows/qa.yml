@@ -1,0 +1,44 @@
+name: QA Factory
+
+on:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      client_slug:
+        description: Client slug to validate; leave blank to validate all clients
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          package-manager-cache: false
+      - name: Validate and QA
+        shell: bash
+        run: |
+          set -euo pipefail
+          INPUT_SLUG="${{ inputs.client_slug }}"
+          if [ -n "$INPUT_SLUG" ]; then
+            npm run validate -- --slug="$INPUT_SLUG"
+            npm run qa -- --slug="$INPUT_SLUG"
+          else
+            found=0
+            for dir in clients/*; do
+              [ -d "$dir" ] || continue
+              slug="$(basename "$dir")"
+              found=1
+              npm run validate -- --slug="$slug"
+              npm run qa -- --slug="$slug"
+            done
+            if [ "$found" -eq 0 ]; then
+              echo "No client projects yet."
+            fi
+          fi

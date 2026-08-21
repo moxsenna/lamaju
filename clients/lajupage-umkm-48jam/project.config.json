@@ -1,0 +1,9 @@
+{
+  "client_slug": "lajupage-umkm-48jam",
+  "source_dir": "src",
+  "output_dir": "dist",
+  "cloudflare": {
+    "project_name": "lp-lajupage-umkm-48jam",
+    "production_branch": "main"
+  }
+}

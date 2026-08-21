@@ -1,0 +1,12 @@
+node_modules/
+dist/*
+!dist/.gitkeep
+.env
+.dev.vars
+.wrangler/
+.DS_Store
+.commandcode/
+.playwright-mcp/
+.zcode/
+clients/*/qa-report.json
+clients/*/deployment-result.json

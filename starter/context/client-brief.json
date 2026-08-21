@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "project_id": "",
+    "client_name": "",
+    "brand_name": "",
+    "page_slug": "",
+    "status": "DRAFT",
+    "timezone": "Asia/Jakarta",
+    "ready_for_production_at": "",
+    "sla_deadline_at": "",
+    "owner": ""
+  },
+  "scope": {
+    "package": "LP_48H_299K",
+    "language": "id-ID",
+    "max_sections": 10,
+    "primary_conversion": "WHATSAPP",
+    "revision_rounds": 1,
+    "revision_item_limit": 10,
+    "included_tracking": [
+      "GA4_IF_ID_PROVIDED",
+      "META_PIXEL_IF_ID_PROVIDED"
+    ],
+    "excluded": [
+      "dashboard",
+      "login",
+      "database",
+      "checkout",
+      "custom_backend",
+      "complex_integrations",
+      "multi_product_catalog"
+    ]
+  },
+  "offer": {
+    "offer_name": "",
+    "category": "",
+    "description": "",
+    "primary_goal": "",
+    "price": {
+      "currency": "IDR",
+      "normal": null,
+      "promo": null,
+      "display_text": ""
+    },
+    "promotion": {
+      "headline": "",
+      "bonus": [],
+      "deadline": "",
+      "conditions": ""
+    },
+    "service_area": "",
+    "fulfillment": "",
+    "terms": []
+  },
+  "audience": {
+    "primary_audience": "",
+    "secondary_audience": "",
+    "pain_points": [],
+    "desired_outcomes": [],
+    "trigger_moments": [],
+    "objections": [],
+    "current_alternatives": [],
+    "not_for": [],
+    "traffic_sources": []
+  },
+  "product": {
+    "mechanism": "",
+    "features": [],
+    "benefits": [],
+    "differentiators": [],
+    "limitations": [],
+    "usage_steps": [],
+    "faq": []
+  },
+  "proof": {
+    "testimonials": [],
+    "case_studies": [],
+    "credentials": [],
+    "customer_count": null,
+    "years_experience": null,
+    "risk_reversal": "",
+    "evidence_files": []
+  },
+  "claims": {
+    "approved_claims": [],
+    "needs_evidence": [],
+    "prohibited_claims": [],
+    "regulated_category_notes": ""
+  },
+  "brand": {
+    "logo_file": "",
+    "primary_color": "",
+    "secondary_color": "",
+    "preferred_style": [],
+    "disliked_style": [],
+    "reference_sites": [],
+    "mandatory_words": [],
+    "forbidden_words": []
+  },
+  "assets": {
+    "status": "PENDING",
+    "files": [],
+    "usage_rights_confirmed": false,
+    "hero_asset": "",
+    "asset_limitations": ""
+  },
+  "cta": {
+    "type": "WHATSAPP",
+    "whatsapp_number_local": "",
+    "whatsapp_number_e164": "",
+    "display_number": "",
+    "prefilled_message": "",
+    "primary_label": "",
+    "secondary_labels": [],
+    "fallback_text": ""
+  },
+  "tracking": {
+    "ga4_measurement_id": "",
+    "meta_pixel_id": "",
+    "google_tag_manager_id": "",
+    "additional_scripts": [],
+    "event_spec": {
+      "whatsapp_click": {
+        "ga4_event": "whatsapp_click",
+        "meta_event": "Contact",
+        "parameters": [
+          "cta_location",
+          "offer_name",
+          "page_slug",
+          "link_url"
+        ]
+      },
+      "form_success": {
+        "enabled": false,
+        "ga4_event": "generate_lead",
+        "meta_event": "Lead"
+      }
+    }
+  },
+  "domain": {
+    "mode": "PROVIDER_SUBDOMAIN",
+    "provider_subdomain": "",
+    "custom_domain": "",
+    "dns_access_confirmed": false,
+    "custom_domain_is_sla_blocker": false
+  },
+  "footer": {
+    "business_name": "",
+    "address": "",
+    "email": "",
+    "social_links": [],
+    "privacy_url": "",
+    "terms_url": ""
+  },
+  "approval": {
+    "brief_summary_sent_at": "",
+    "brief_approved_at": "",
+    "approved_by": "",
+    "scope_approved": false,
+    "claims_approved": false,
+    "whatsapp_tested": false,
+    "payment_received": false
+  },
+  "internal": {
+    "research_notes": "",
+    "angle_primary": "",
+    "angle_supporting": [],
+    "visual_concept": "",
+    "known_risks": [],
+    "assumptions": []
+  }
+}

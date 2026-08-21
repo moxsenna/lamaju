@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/client-brief.schema.json",
+  "title": "Landing Page Client Brief",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "project",
+    "scope",
+    "offer",
+    "audience",
+    "product",
+    "proof",
+    "claims",
+    "brand",
+    "assets",
+    "cta",
+    "tracking",
+    "domain",
+    "approval",
+    "internal"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "project": {
+      "type": "object",
+      "required": [
+        "project_id",
+        "client_name",
+        "brand_name",
+        "page_slug",
+        "status",
+        "timezone"
+      ],
+      "properties": {
+        "project_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "client_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "brand_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "page_slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "status": {
+          "enum": [
+            "DRAFT",
+            "INTAKE",
+            "READY_FOR_PRODUCTION",
+            "RESEARCH",
+            "STRATEGY",
+            "BUILDING",
+            "QA",
+            "DEPLOYED",
+            "REVISION",
+            "DONE",
+            "BLOCKED"
+          ]
+        },
+        "timezone": {
+          "const": "Asia/Jakarta"
+        },
+        "ready_for_production_at": {
+          "type": "string"
+        },
+        "sla_deadline_at": {
+          "type": "string"
+        },
+        "owner": {
+          "type": "string"
+        }
+      }
+    },
+    "scope": {
+      "type": "object"
+    },
+    "offer": {
+      "type": "object",
+      "required": [
+        "offer_name",
+        "category",
+        "description",
+        "primary_goal"
+      ]
+    },
+    "audience": {
+      "type": "object",
+      "required": [
+        "primary_audience",
+        "pain_points",
+        "desired_outcomes",
+        "objections"
+      ]
+    },
+    "product": {
+      "type": "object"
+    },
+    "proof": {
+      "type": "object"
+    },
+    "claims": {
+      "type": "object"
+    },
+    "brand": {
+      "type": "object"
+    },
+    "assets": {
+      "type": "object",
+      "required": [
+        "status",
+        "files",
+        "usage_rights_confirmed"
+      ]
+    },
+    "cta": {
+      "type": "object",
+      "required": [
+        "type",
+        "whatsapp_number_e164",
+        "prefilled_message",
+        "primary_label"
+      ],
+      "properties": {
+        "type": {
+          "const": "WHATSAPP"
+        },
+        "whatsapp_number_e164": {
+          "type": "string",
+          "pattern": "^[1-9][0-9]{7,14}$"
+        },
+        "prefilled_message": {
+          "type": "string",
+          "minLength": 1
+        },
+        "primary_label": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "tracking": {
+      "type": "object"
+    },
+    "domain": {
+      "type": "object"
+    },
+    "footer": {
+      "type": "object"
+    },
+    "approval": {
+      "type": "object",
+      "required": [
+        "scope_approved",
+        "claims_approved",
+        "whatsapp_tested",
+        "payment_received"
+      ]
+    },
+    "internal": {
+      "type": "object"
+    }
+  }
+}

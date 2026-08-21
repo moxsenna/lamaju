@@ -1,0 +1,22 @@
+{
+  "name": "landing-page-factory",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AI-assisted custom landing page production system with a 48-hour SLA.",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "new:client": "node scripts/new-client.mjs",
+    "validate": "node scripts/validate-brief.mjs",
+    "mark:ready": "node scripts/mark-ready.mjs",
+    "status": "node scripts/status.mjs",
+    "set:status": "node scripts/set-status.mjs",
+    "build": "node scripts/build-client.mjs",
+    "qa": "node scripts/qa-static.mjs",
+    "serve": "node scripts/serve-client.mjs",
+    "provision": "node scripts/provision-pages.mjs",
+    "deploy": "node scripts/deploy-client.mjs"
+  }
+}
