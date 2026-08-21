@@ -234,6 +234,9 @@
           <p>Pilih kategori untuk melihat bagaimana desain, copy, dan CTA disesuaikan dengan cara masing-masing UMKM menjual produknya.</p>
         </div>
 
+        <div class="showcase-hint-wrap">
+          <span class="showcase-hint">✦ Klik kategori di bawah untuk melihat contoh adaptasi desain & copy:</span>
+        </div>
         <div class="showcase__controls reveal" role="tablist" aria-label="Pilih contoh kategori">
           <button class="showcase-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="demo-panel" data-demo="food">Kuliner</button>
           <button class="showcase-tab" type="button" role="tab" aria-selected="false" aria-controls="demo-panel" data-demo="beauty">Kecantikan</button>
@@ -331,6 +334,7 @@
         </div>
 
         <article class="price-card reveal" data-delay="1">
+          <div class="slot-badge"><span class="pulse-dot"></span> Slot produksi minggu ini: <strong>Terbuka (Maks. 5 UMKM)</strong></div>
           <div class="price-card__top">
             <span>PAKET UMKM KILAT</span>
             <span>01 HALAMAN</span>
@@ -356,6 +360,27 @@
           </a>
           <small>Custom domain, pembelian domain, dan integrasi khusus dihitung terpisah.</small>
         </article>
+      </div>
+
+      <div class="shell qualifier-grid reveal">
+        <div class="qualifier-box qualifier--yes">
+          <span class="qualifier-tag">COCOK UNTUK ANDA JIKA</span>
+          <h4>Fokus promosi satu penawaran</h4>
+          <ul>
+            <li>Punya 1 produk atau jasa unggulan yang ingin segera diiklankan</li>
+            <li>Ingin traffic dari bio medsos & iklan (Meta/TikTok) langsung terkonversi</li>
+            <li>Butuh halaman profesional cepat tanpa pusing teknis & hosting bulanan</li>
+          </ul>
+        </div>
+        <div class="qualifier-box qualifier--no">
+          <span class="qualifier-tag">KURANG COCOK JIKA</span>
+          <h4>Membutuhkan sistem kompleks</h4>
+          <ul>
+            <li>Toko online dengan ratusan hingga ribuan katalog produk (SKU)</li>
+            <li>Marketplace multi-vendor, sistem membership, atau backend custom</li>
+            <li>Memerlukan proses meeting dan revisi tanpa batas</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -417,8 +442,22 @@
         <div class="final-cta__eyebrow">SUDAH PUNYA FOTO PRODUK DAN HARGA?</div>
         <h2 id="contact-title">Itu sudah cukup untuk mulai.<br><em>Biarkan kami yang merapikan sisanya.</em></h2>
         <p>Chat CS sekarang. Ceritakan usaha Anda, kirim foto serta daftar harga, lalu kami cek apakah bisa masuk paket UMKM 48 jam.</p>
+        <div class="quick-brief" data-quick-brief>
+          <span class="quick-brief__label">Pilih kategori usaha Anda:</span>
+          <div class="quick-brief__chips" role="group" aria-label="Pilih kategori usaha">
+            <button type="button" class="brief-chip is-active" data-brief-cat="Kuliner">🍔 Kuliner</button>
+            <button type="button" class="brief-chip" data-brief-cat="Fashion & Kecantikan">✨ Fashion & Beauty</button>
+            <button type="button" class="brief-chip" data-brief-cat="Jasa & Servis">💼 Jasa & Servis</button>
+            <button type="button" class="brief-chip" data-brief-cat="Properti & Home">🏠 Properti & Home</button>
+            <button type="button" class="brief-chip" data-brief-cat="Produk Lainnya">📦 Produk Lainnya</button>
+          </div>
+          <div class="quick-brief__input-wrap">
+            <input type="text" class="quick-brief__input" placeholder="Ketik nama brand / usaha Anda (opsional)..." data-brief-brand aria-label="Nama brand atau usaha">
+          </div>
+        </div>
+
         <a class="button button--light button--large" href="#" data-cta="whatsapp" data-cta-location="final" data-offer="paket-umkm-48-jam">
-          Ceritakan usaha lewat WhatsApp sekarang
+          Kirim brief via WhatsApp sekarang
           <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M8 5h7v7"/></svg>
         </a>
         <div class="final-cta__meta">

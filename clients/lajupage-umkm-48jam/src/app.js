@@ -74,6 +74,35 @@
     element.textContent = config.whatsappNumber ? `+${digitsOnly}` : "WhatsApp CS";
   });
 
+  let selectedCategory = "Kuliner";
+  let brandName = "";
+
+  const briefChips = document.querySelectorAll("[data-brief-cat]");
+  const brandInput = document.querySelector("[data-brief-brand]");
+  const finalCta = document.querySelector('[data-cta-location="final"]');
+
+  function updateFinalCta() {
+    if (!finalCta) return;
+    const cleanBrand = (brandName || "").trim();
+    const brandPhrase = cleanBrand ? ` bernama "${cleanBrand}"` : "";
+    locationMessages.final = `Halo Lamaju, saya punya usaha ${selectedCategory}${brandPhrase}. Saya ingin konsultasi pembuatan landing page 48 jam.`;
+    finalCta.setAttribute("href", getWhatsAppUrl("final"));
+  }
+
+  briefChips.forEach((chip) => {
+    chip.addEventListener("click", () => {
+      briefChips.forEach((c) => c.classList.remove("is-active"));
+      chip.classList.add("is-active");
+      selectedCategory = chip.dataset.briefCat || "Usaha";
+      updateFinalCta();
+    });
+  });
+
+  brandInput?.addEventListener("input", (e) => {
+    brandName = e.target.value;
+    updateFinalCta();
+  });
+
   document.querySelectorAll("[data-dialog-close]").forEach((button) => {
     button.addEventListener("click", () => setupDialog?.close());
   });

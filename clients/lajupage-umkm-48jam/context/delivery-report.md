@@ -3,7 +3,7 @@
 ## Delivery
 
 - Project: Lamaju UMKM 48 Jam
-- Version: Deployment Cloudflare Pages `b925c7b3` — galeri portfolio interaktif dengan 15 demo, dynamic WhatsApp messaging per CTA, dan aset fotografi riil
+- Version: Deployment Cloudflare Pages `277fc1b0` — galeri 15 demo, Interactive Quick Brief Builder, slot capacity badge, qualifier card, dan dynamic WhatsApp messaging
 - Public URL: https://lp-lajupage-umkm-48jam.pages.dev/
 - Delivered at: 2026-08-21
 - SLA deadline: Selesai
