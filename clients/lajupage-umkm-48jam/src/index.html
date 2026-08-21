@@ -111,13 +111,28 @@
                   <button type="button" tabindex="-1">Pesan lewat WhatsApp →</button>
                 </div>
                 <div class="bottle-scene" aria-hidden="true">
-                  <div class="sun-disc"></div>
-                  <div class="bean bean--1"></div><div class="bean bean--2"></div><div class="bean bean--3"></div>
-                  <div class="bottle">
-                    <div class="bottle__cap"></div>
-                    <div class="bottle__neck"></div>
-                    <div class="bottle__body"><span>KOPI<br>SORE</span><small>cold brew</small></div>
-                  </div>
+                  <svg viewBox="0 0 200 240" fill="none" class="bottle-scene-svg">
+                    <circle cx="100" cy="120" r="72" fill="var(--orange)" fill-opacity="0.85"/>
+                    <circle cx="100" cy="120" r="86" stroke="var(--ink)" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.35"/>
+                    <g transform="rotate(-15 45 65)">
+                      <ellipse cx="45" cy="65" rx="13" ry="8" fill="#3b2219" stroke="var(--ink)" stroke-width="1.5"/>
+                      <path d="M37 65c3-3 12 3 16 0" stroke="var(--lime)" stroke-width="1.5"/>
+                    </g>
+                    <g transform="rotate(25 155 170)">
+                      <ellipse cx="155" cy="170" rx="11" ry="7" fill="#3b2219" stroke="var(--ink)" stroke-width="1.5"/>
+                      <path d="M148 170c3-2 11 2 14 0" stroke="var(--lime)" stroke-width="1.5"/>
+                    </g>
+                    <rect x="84" y="24" width="32" height="14" rx="3" fill="#141414" stroke="var(--ink)" stroke-width="2"/>
+                    <line x1="84" y1="28" x2="116" y2="28" stroke="#444" stroke-width="1.5"/>
+                    <rect x="89" y="38" width="22" height="24" fill="#2c1a14" stroke="var(--ink)" stroke-width="2"/>
+                    <path d="M68 62h64c6 0 10 4 10 10v120c0 10-8 18-18 18H76c-10 0-18-8-18-18V72c0-6 4-10 10-10z" fill="#24150f" stroke="var(--ink)" stroke-width="2.5"/>
+                    <path d="M64 78c0-3 2-6 5-6h4v130c0 5-4 9-9 9v-133z" fill="#523126" fill-opacity="0.6"/>
+                    <rect x="66" y="96" width="68" height="82" rx="4" fill="#f4f0e7" stroke="var(--ink)" stroke-width="1.5"/>
+                    <text x="100" y="125" text-anchor="middle" fill="#141414" font-family="Inter,sans-serif" font-weight="900" font-size="14" letter-spacing="-0.5">KOPI</text>
+                    <text x="100" y="142" text-anchor="middle" fill="#141414" font-family="Inter,sans-serif" font-weight="900" font-size="14" letter-spacing="-0.5">SORE</text>
+                    <rect x="76" y="150" width="48" height="1" fill="#141414"/>
+                    <text x="100" y="165" text-anchor="middle" fill="#69665e" font-family="Inter,sans-serif" font-weight="700" font-size="8" letter-spacing="1">COLD BREW</text>
+                  </svg>
                 </div>
               </div>
               <div class="mock-proof">
@@ -168,19 +183,44 @@
         <div class="problem-grid">
           <article class="problem-card reveal">
             <span class="problem-card__number">01</span>
-            <div class="problem-card__shape shape-a" aria-hidden="true"></div>
+            <div class="problem-card__visual" aria-hidden="true">
+              <svg class="problem-svg" viewBox="0 0 120 120" fill="none">
+                <circle cx="60" cy="60" r="48" stroke="var(--ink)" stroke-width="2.5" stroke-dasharray="6 6"/>
+                <circle cx="60" cy="60" r="38" fill="var(--orange)" fill-opacity="0.18" stroke="var(--orange)" stroke-width="2.5"/>
+                <path d="M60 34v26l16 10" stroke="var(--ink)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="60" cy="60" r="5" fill="var(--ink)"/>
+                <path d="M42 22l-6-6M78 22l6-6" stroke="var(--orange)" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
             <h3>Promosi tertunda menunggu website</h3>
             <p>Promo sudah siap, stok sudah ada, tetapi halaman jualan masih menunggu proses desain yang panjang.</p>
           </article>
+
           <article class="problem-card problem-card--dark reveal" data-delay="1">
             <span class="problem-card__number">02</span>
-            <div class="problem-card__shape shape-b" aria-hidden="true"></div>
+            <div class="problem-card__visual" aria-hidden="true">
+              <svg class="problem-svg" viewBox="0 0 120 120" fill="none">
+                <rect x="18" y="22" width="64" height="40" rx="10" fill="var(--blue)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+                <path d="M30 36h40M30 46h24" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                <rect x="38" y="52" width="64" height="40" rx="10" fill="#202020" stroke="var(--orange)" stroke-width="2.5"/>
+                <path d="M50 66h40M50 76h24" stroke="var(--orange)" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="88" cy="76" r="3.5" fill="var(--lime)"/>
+              </svg>
+            </div>
             <h3>Semua dijelaskan ulang lewat chat</h3>
             <p>Calon pembeli selalu menanyakan harga, manfaat, cara pesan, dan detail yang seharusnya bisa dijelaskan otomatis.</p>
           </article>
+
           <article class="problem-card problem-card--accent reveal" data-delay="2">
             <span class="problem-card__number">03</span>
-            <div class="problem-card__shape shape-c" aria-hidden="true"></div>
+            <div class="problem-card__visual" aria-hidden="true">
+              <svg class="problem-svg" viewBox="0 0 120 120" fill="none">
+                <path d="M25 28h70l-24 44v22l-14-6V72L25 28z" fill="white" fill-opacity="0.35" stroke="var(--ink)" stroke-width="2.5" stroke-linejoin="round"/>
+                <path d="M60 20v18M50 26l10 12 10-12" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M78 52l18 12M96 64l-8 2M96 64l-2-8" stroke="var(--orange)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="60" cy="104" r="4.5" fill="var(--ink)"/>
+              </svg>
+            </div>
             <h3>Traffic iklan langsung bocor</h3>
             <p>Orang klik iklan lalu masuk WhatsApp tanpa cukup informasi, sehingga CS harus meyakinkan dari awal lagi.</p>
           </article>
@@ -202,23 +242,65 @@
 
         <div class="deliverables">
           <article class="deliverable reveal">
-            <div class="deliverable__icon icon-target" aria-hidden="true"><i></i></div>
+            <div class="deliverable__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="24" cy="24" r="20" stroke="var(--ink)" stroke-width="2"/>
+                <circle cx="24" cy="24" r="13" stroke="var(--orange)" stroke-width="2.5"/>
+                <circle cx="24" cy="24" r="5" fill="var(--ink)" stroke="none"/>
+                <path d="M38 10L26 22" stroke="var(--orange)" stroke-width="2.5"/>
+                <path d="M38 10h-7m7 0v7" stroke="var(--orange)" stroke-width="2.5"/>
+              </svg>
+            </div>
             <div><span>01</span><h3>Pesan utama langsung dipahami</h3><p>Kami menggali produk dan calon pembeli Anda agar headline tidak generik dan manfaatnya cepat tertangkap.</p></div>
           </article>
+
           <article class="deliverable reveal">
-            <div class="deliverable__icon icon-type" aria-hidden="true">Aa</div>
+            <div class="deliverable__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 40h32" stroke="var(--ink)" stroke-width="2"/>
+                <path d="M12 36l3-12L31 8a3 3 0 0 1 4.2 0l4.8 4.8a3 3 0 0 1 0 4.2L24 33l-12 3z" fill="var(--cream)" fill-opacity="0.6" stroke="var(--ink)" stroke-width="2"/>
+                <path d="M27 12l9 9" stroke="var(--orange)" stroke-width="2.5"/>
+                <path d="M18 27l3 3" stroke="var(--ink)" stroke-width="2"/>
+              </svg>
+            </div>
             <div><span>02</span><h3>Copywriting kami yang susun</h3><p>Anda tidak perlu menulis sendiri. Cukup ceritakan usaha, harga, keunggulan, dan informasi yang benar.</p></div>
           </article>
+
           <article class="deliverable reveal">
-            <div class="deliverable__icon icon-layout" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="deliverable__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="8" width="36" height="32" rx="6" stroke="var(--ink)" stroke-width="2"/>
+                <rect x="12" y="14" width="10" height="20" rx="3" fill="var(--lime)" stroke="var(--ink)" stroke-width="1.8"/>
+                <rect x="26" y="14" width="10" height="8" rx="2" fill="var(--blue)" stroke="var(--ink)" stroke-width="1.8"/>
+                <rect x="26" y="26" width="10" height="8" rx="2" fill="var(--orange)" stroke="var(--ink)" stroke-width="1.8"/>
+              </svg>
+            </div>
             <div><span>03</span><h3>Desain custom untuk usaha Anda</h3><p>Tampilan disesuaikan dengan kategori, karakter produk, dan aset yang tersedia—bukan sekadar mengganti nama pada template.</p></div>
           </article>
+
           <article class="deliverable reveal">
-            <div class="deliverable__icon icon-phone" aria-hidden="true"><i></i></div>
+            <div class="deliverable__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="12" y="6" width="24" height="36" rx="6" stroke="var(--ink)" stroke-width="2"/>
+                <path d="M21 37h6" stroke="var(--ink)" stroke-width="2"/>
+                <path d="M24 15c-4.4 0-8 3-8 6.8 0 1.5.6 2.9 1.7 4L16 29l3.8-1.2c1.3.8 2.7 1.2 4.2 1.2 4.4 0 8-3 8-6.8s-3.6-7.2-8-7.2z" fill="var(--lime)" stroke="var(--ink)" stroke-width="1.8"/>
+              </svg>
+            </div>
             <div><span>04</span><h3>Calon pembeli langsung ke WhatsApp</h3><p>Semua tombol diarahkan ke nomor CS dengan pesan awal yang sudah terisi agar percakapan lebih mudah dimulai.</p></div>
           </article>
+
           <article class="deliverable reveal">
-            <div class="deliverable__icon icon-speed" aria-hidden="true"><i></i></div>
+            <div class="deliverable__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="24" cy="24" r="18" stroke="var(--ink)" stroke-width="2"/>
+                <path d="M24 12v6" stroke="var(--ink)" stroke-width="2"/>
+                <path d="M12 24h6" stroke="var(--ink)" stroke-width="2"/>
+                <path d="M30 24h6" stroke="var(--ink)" stroke-width="2"/>
+                <path d="M24 24l8-8" stroke="var(--orange)" stroke-width="3"/>
+                <circle cx="24" cy="24" r="3.5" fill="var(--ink)"/>
+                <path d="M14 34a14 14 0 0 1 20 0" stroke="var(--lime)" stroke-width="3"/>
+              </svg>
+            </div>
             <div><span>05</span><h3>Cepat dibuka dari ponsel</h3><p>Cocok untuk traffic dari Instagram, Facebook, TikTok, status WhatsApp, QR code, dan bio media sosial.</p></div>
           </article>
         </div>

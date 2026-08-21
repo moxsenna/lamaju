@@ -3,7 +3,7 @@
 ## Delivery
 
 - Project: Lamaju UMKM 48 Jam
-- Version: Deployment Cloudflare Pages `c33eca52` — galeri 15 demo, favicon SVG, unified portfolio topbar navigation, Interactive Quick Brief Builder, slot capacity badge, qualifier card, dan dynamic WhatsApp messaging
+- Version: Deployment Cloudflare Pages `df342203` — peningkatan grafis vektor SVG tajam pada deliverables, problem cards, hero mock scene, dan showcase canvas
 - Public URL: https://lp-lajupage-umkm-48jam.pages.dev/
 - Delivered at: 2026-08-21
 - SLA deadline: Selesai
